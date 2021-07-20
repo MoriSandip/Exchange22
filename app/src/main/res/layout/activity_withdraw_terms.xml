@@ -22,14 +22,15 @@
                 android:id="@+id/textView42"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="Can I use someone else's bank account to withdraw money?"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView20"
                 app:layout_constraintEnd_toEndOf="@+id/textView40"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
-                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+                app:layout_constraintTop_toTopOf="@+id/imageView20" />
 
             <TextView
                 android:id="@+id/textView40"
@@ -37,21 +38,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
                 android:text="How do I withdraw cash?"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+                app:layout_constraintEnd_toStartOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@+id/imageView19" />
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="\nYou can Withdraw Cash at any time by following the below mentioned steps:
 \n\nStep 1: Login to your Exchange22 account on the App.\n\nStep 2: Visit the ‘My Balance’ page and click on ‘Cash Withdraw’ option under the winnings section.
@@ -68,6 +67,7 @@
 However, in normal buy/sell trade, we charge 6% per trade initiated by you. Also, for with-drawal on multi-bagger trades, we charge 20% of the pooled money as portal charges and distribute the remaining 80% amongst the winner(s).
 \n\n
 The charges help us improve and provide you with better interface so that you can enjoy and experience the thrill better."
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="@+id/textView40"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
                 app:layout_constraintTop_toBottomOf="@+id/textView40" />
@@ -75,10 +75,12 @@ The charges help us improve and provide you with better interface so that you ca
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginTop="3dp"
+                android:lineSpacingExtra="8sp"
                 android:text="Unfortunately, you can withdraw money from your Exchange22 account balance ONLY to your own bank account. If you do not have a bank account, your winnings will keep getting accumulated in your Exchange22 account balance. Once you get a bank account in your name, you can use the same to get your Exchange22 account verified and place your with-drawal requests."
-                app:layout_constraintEnd_toEndOf="@+id/textView40"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
                 app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
@@ -91,15 +93,18 @@ The charges help us improve and provide you with better interface so that you ca
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView21"
                 app:layout_constraintEnd_toEndOf="@+id/textView40"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView42"
-                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+                app:layout_constraintTop_toBottomOf="@+id/view13" />
 
             <TextView
                 android:id="@+id/textView45"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="3dp"
+                android:lineSpacingExtra="8sp"
                 android:text="In cases of Instant Withdrawal Process (via IMPS) method of transfer the withdrawal might take 2-3 hours for the amount to reflect in your bank account. In case of delay on the part of the Bank to credit the funds to your account, it may take up to 3 working days.
 \n\n
 Normally, withdrawals are processed on the next working day of submitting a withdrawal request and are transferred to your verified bank account within 5 working days. Remember, your Exchange22 account must be completely verified before you place a withdrawal re-quest.
@@ -131,9 +136,71 @@ Disclaimers
 Exchange22, may, at its sole and absolute discretion, can hold or deactivate the Instant Withdrawal service anytime without any prior information to the user.\n\n
 \t\t
 In case of a dispute, disagreement or concern between Exchange22 and its payment partner, Exchange22 holds all the right to put the withdrawal requests and amounts on hold till such dispute is resolved."
-                app:layout_constraintEnd_toEndOf="@+id/textView40"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
                 app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintHorizontal_bias="0.348"
+                app:layout_constraintStart_toStartOf="@+id/textView42"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintTop_toBottomOf="@+id/view12"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/view13"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView21"
+                app:layout_constraintStart_toStartOf="@+id/textView44"
+                app:layout_constraintTop_toBottomOf="@+id/textView45" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
