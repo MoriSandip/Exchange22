@@ -51,7 +51,7 @@
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_marginTop="3dp"
                 android:text="\nYou can Withdraw Cash at any time by following the below mentioned steps:
 \n\nStep 1: Login to your Exchange22 account on the App.\n\nStep 2: Visit the ‘My Balance’ page and click on ‘Cash Withdraw’ option under the winnings section.
@@ -98,7 +98,7 @@ The charges help us improve and provide you with better interface so that you ca
             <TextView
                 android:id="@+id/textView45"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_marginTop="3dp"
                 android:text="In cases of Instant Withdrawal Process (via IMPS) method of transfer the withdrawal might take 2-3 hours for the amount to reflect in your bank account. In case of delay on the part of the Bank to credit the funds to your account, it may take up to 3 working days.
 \n\n
