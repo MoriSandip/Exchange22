@@ -1,0 +1,2 @@
+rootProject.name = "Exchange22-sport stoke exchange analysis"
+include ':app'
