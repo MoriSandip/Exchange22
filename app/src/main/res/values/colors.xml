@@ -9,6 +9,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bnt_back">#ECF1B9</color>
+
     <color name="icon_color">#5A5102</color>
     <color name="icon_ripple_color">#596103</color>
     <color name="bottom_back">#30302F</color>
@@ -29,4 +31,7 @@
     <color name="ElectricBlue">#9AFEFF</color>
     <color name="ButterflyBlue">#38ACEC</color>
     <color name="GrayCloud">#B6B6B4</color>
+    <color name="step">#FDFDC9</color>
+
+
 </resources>
