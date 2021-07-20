@@ -9,12 +9,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bnt_back">#ECF1B9</color>
-
     <color name="icon_color">#5A5102</color>
     <color name="icon_ripple_color">#596103</color>
     <color name="bottom_back">#30302F</color>
-    <color name="step">#FDFDC9</color>
-
-
+    <color name="yellow">#FFFF00</color>
+    <color name="lime">#00FF00</color>
+    <color name="Goldenrod">#EDDA74</color>
+    <color name="LightSalmon">#F9966B</color>
+    <color name="RosyBrown">#B38481</color>
+    <color name="BeanRed">#F75D59</color>
+    <color name="Sienna">#8A4117</color>
+    <color name="LightSlate">#CCFFFF</color>
+    <color name="indian">#87cefa</color>
+    <color name="OceanBlue">#357EC7</color>
+    <color name="JetGray">#EBF4FA</color>
+    <color name="DaySkyBlue">#9FD1F5</color>
+    <color name="BlueWhale">#342D7E</color>
+    <color name="BlueLotus">#6960EC</color>
+    <color name="ElectricBlue">#9AFEFF</color>
+    <color name="ButterflyBlue">#38ACEC</color>
+    <color name="GrayCloud">#B6B6B4</color>
 </resources>
