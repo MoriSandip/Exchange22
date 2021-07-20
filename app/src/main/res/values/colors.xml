@@ -3,6 +3,8 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#A39302</color>
     <color name="purple_700">#C7D353</color>
+    <color name="download_android">#C7D353</color>
+    <color name="download_apple">#FF03DAC5</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
