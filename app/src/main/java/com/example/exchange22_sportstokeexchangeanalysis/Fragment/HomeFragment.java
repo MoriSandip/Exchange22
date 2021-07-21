@@ -1,9 +1,13 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Fragment;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.net.Uri;
 import android.os.Bundle;
+
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -18,7 +22,7 @@ import java.util.List;
 
 
 public class HomeFragment extends Fragment {
-
+   CardView androiddownload;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private int tabIcons[] = {R.drawable.ic_baseline_guide,
@@ -39,10 +43,20 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-
+        androiddownload =(CardView)view.findViewById(R.id.android_download);
         tabLayout = (TabLayout) view.findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
+
+        androiddownload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://app.exchange22.com/admin/apk/Exchange22.apk";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
         return view;
     }
     private void setupTabIcons() {
