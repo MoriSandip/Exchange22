@@ -43,22 +43,20 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         viewPager = view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-        androiddownload =view.findViewById(R.id.android_download);
+        androiddownload = view.findViewById(R.id.android_download);
         tabLayout = view.findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
 
-        androiddownload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "http://app.exchange22.com/admin/apk/Exchange22.apk";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
+        androiddownload.setOnClickListener(v -> {
+            String url = "http://app.exchange22.com/admin/apk/Exchange22.apk";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         });
         return view;
     }
+
     private void setupTabIcons() {
         tabLayout.getTabAt(0).setIcon(tabIcons[0]);
         tabLayout.getTabAt(1).setIcon(tabIcons[1]);
@@ -88,6 +86,7 @@ public class HomeFragment extends Fragment {
             }
         });
     }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         adapter.addFrag(new Guide_Fragment(), "Guide");
@@ -95,6 +94,7 @@ public class HomeFragment extends Fragment {
 
         viewPager.setAdapter(adapter);
     }
+
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
@@ -123,6 +123,13 @@ public class HomeFragment extends Fragment {
         public CharSequence getPageTitle(int position) {
             return null;
         }
+    }
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
     }
 
 
