@@ -44,11 +44,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             app:cardCornerRadius="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+            app:layout_constraintBottom_toBottomOf="@+id/android_download"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/cardView2"
-            app:layout_constraintTop_toTopOf="@+id/cardView2">
+            app:layout_constraintStart_toEndOf="@+id/android_download"
+            app:layout_constraintTop_toTopOf="@+id/android_download">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -122,7 +122,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
+            android:id="@+id/android_download"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_marginTop="16dp"
