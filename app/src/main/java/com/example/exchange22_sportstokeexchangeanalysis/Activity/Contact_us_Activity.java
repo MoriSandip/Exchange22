@@ -15,7 +15,7 @@ public class Contact_us_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
-        getSupportActionBar().setTitle("Contact Details");
+        getSupportActionBar().setTitle("Contact information");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }  @Override

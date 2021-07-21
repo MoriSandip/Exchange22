@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.About_Activity;
+import com.example.exchange22_sportstokeexchangeanalysis.Activity.Contact_us_Activity;
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.FeaturesActivity;
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.How_to_playMainActivity;
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.LegalityActivity;
@@ -21,7 +22,7 @@ import com.example.exchange22_sportstokeexchangeanalysis.R;
 
 public class Guide_Fragment extends Fragment {
 
-    CardView how_to_play,feature,cardView5,cardView10,cardView6;
+    CardView how_to_play,feature,cardView5,cardView10,cardView6,Contact;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class Guide_Fragment extends Fragment {
         cardView5 = view.findViewById(R.id.cardView5);
         cardView10 = view.findViewById(R.id.cardView10);
         cardView6 = view.findViewById(R.id.cardView6);
+        Contact = view.findViewById(R.id.Contact);
 
         how_to_play.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +73,14 @@ public class Guide_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), LegalityActivity.class));
+                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        Contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), Contact_us_Activity.class));
                 Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
 
             }
