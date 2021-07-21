@@ -1,58 +1,60 @@
 package com.example.exchange22_sportstokeexchangeanalysis;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
+
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.Toast;
-import com.example.exchange22_sportstokeexchangeanalysis.Fragment.HomeFragment;
-import com.google.android.material.navigation.NavigationView;
+
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityMainBinding;
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-    private DrawerLayout drawerLayout;
+    public static int position = -1;
+    ActivityMainBinding binding;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-       /* Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this::onNavigationItemSelected);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
+        //getPermission();
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
+        binding.tablayout.addTab(binding.tablayout.newTab().setText("Guide"));
+        binding.tablayout.addTab(binding.tablayout.newTab().setText("Matches"));
+
+        int[] imageResId = {
+                R.drawable.ic_baseline_guide,
+                R.drawable.ic_profile,
+        };
+
+        for (int i = 0; i < imageResId.length; i++) {
+            Objects.requireNonNull(binding.tablayout.getTabAt(i)).setIcon(imageResId[i]);
         }
+        binding.tablayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+loadFragment();
+
     }
+    public void loadFragment() {
+        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+        binding.viewpager.setAdapter(adapter);
+        binding.viewpager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(binding.tablayout));
+        binding.tablayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                binding.viewpager.setCurrentItem(tab.getPosition());
+            }
 
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+            }
 
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-                break;
-            case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-            case R.id.nav_sent:
-                Toast.makeText(this, "Sent", Toast.LENGTH_SHORT).show();
-        }
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
-    }
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+            }
+        });
 
-    @Override
-    public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-        } else {
-            super.onBackPressed();
-        }
-    }*/
-}
-}
+    }}
