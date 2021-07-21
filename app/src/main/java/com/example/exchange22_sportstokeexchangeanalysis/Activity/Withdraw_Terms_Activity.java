@@ -1,11 +1,14 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +24,10 @@ public class Withdraw_Terms_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_withdraw_terms);
+        getSupportActionBar().setTitle("Withdraw term - condition");
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         img1 = findViewById(R.id.imageView19);
         img2 = findViewById(R.id.imageView20);
         img3 = findViewById(R.id.imageView21);
@@ -51,6 +58,18 @@ public class Withdraw_Terms_Activity extends AppCompatActivity {
                 }
             }
         });
+    }  @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }/*  imageView14.setOnClickListener(new View.OnClickListener() {
             @Override

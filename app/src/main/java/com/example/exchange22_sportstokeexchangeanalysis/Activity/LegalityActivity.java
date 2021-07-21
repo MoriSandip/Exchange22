@@ -1,5 +1,6 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.transition.AutoTransition;
@@ -7,6 +8,8 @@ import androidx.transition.TransitionManager;
 
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -20,6 +23,10 @@ public class LegalityActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_legality);
+
+        getSupportActionBar().setTitle("Legality Details");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         imageView14 = findViewById(R.id.imageView14);
         imageView15 = findViewById(R.id.imageView15);
         imageView16 = findViewById(R.id.imageView16);
@@ -148,6 +155,18 @@ public class LegalityActivity extends AppCompatActivity {
         });
 
 
+    }  @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
 

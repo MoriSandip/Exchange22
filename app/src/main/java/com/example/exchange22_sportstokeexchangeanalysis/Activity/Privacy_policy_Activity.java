@@ -9,16 +9,14 @@ import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 
-public class FeaturesActivity extends AppCompatActivity {
+public class Privacy_policy_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_features);
-        getSupportActionBar().setTitle("Feature's Details");
+        setContentView(R.layout.activity_privacy_policy);
+        getSupportActionBar().setTitle("Privacy policy");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
 
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
