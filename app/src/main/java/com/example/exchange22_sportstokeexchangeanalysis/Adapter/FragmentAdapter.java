@@ -1,4 +1,4 @@
-package com.example.exchange22_sportstokeexchangeanalysis;
+package com.example.exchange22_sportstokeexchangeanalysis.Adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

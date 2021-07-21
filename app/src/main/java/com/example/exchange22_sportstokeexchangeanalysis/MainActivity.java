@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.exchange22_sportstokeexchangeanalysis.Adapter.FragmentAdapter;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityMainBinding;
 import com.google.android.material.tabs.TabLayout;
 
