@@ -6,4 +6,161 @@
     android:layout_height="match_parent"
     tools:context=".Activity.Privacy_policy_Activity">
 
+    <View
+        android:id="@+id/view6"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView57"
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text='This privacy policy forms part of our “Portal’s” (hereinafter collectively refers to partner website(s) and mobile application(s))Terms and Conditions, by accepting the Terms and Conditions and the Privacy Policy on the registration page, any person utilizing the Portal, hereinafter referred to as the "User or “you” or “your” or any of its features including participation in the various contests, games (including fantasy games, hereinafter referred to as "Contest(s)""Services" being conducted on the Portal shall be bound by this Privacy Policy. You consent to provide Personal Information and are aware of the purpose of sharing such information. If you do not wish to consent to sharing of the mandatory personal information with Hulm Entertainment Private Limited hereinafter referred to as “Exchange22” or “we” or “us” or “our”, requested at the time of registration, request you to not to proceed with the registration. Registration procedure cannot be completed until information in the non-optional fields is provided
+        \n\nAt Exchange22, we aim to provide you with a safe, protected and reliable environment to play.We understand and respect your privacy and thus assure you that any Personal Information provided by you toExchange22 is protected and will be dealt with in accordance to this Policy. Exchange22 shall not provide, distribute, trade, sell or rent your name, e-mail address or other personal information provided on this site to any third party or information related to your usage of the Portal, except as provided in this Privacy Policy.'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1. Information Gathered"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+                app:layout_constraintEnd_toStartOf="@+id/imageView26"
+                app:layout_constraintStart_toStartOf="@+id/textView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="2. Usage of the Information"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                tools:layout_editor_absoluteY="255dp" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="3. Data Security"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                tools:layout_editor_absoluteY="358dp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="4. Data Retention policy"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                tools:layout_editor_absoluteY="439dp" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="5. Exemptions under this Privacy Policy"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                tools:layout_editor_absoluteY="508dp" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="6. Limitation of Liability"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                tools:layout_editor_absoluteY="581dp" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="7. Contact Us"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                tools:layout_editor_absoluteY="671dp" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView57"
+                app:layout_constraintTop_toBottomOf="@+id/textView57"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
