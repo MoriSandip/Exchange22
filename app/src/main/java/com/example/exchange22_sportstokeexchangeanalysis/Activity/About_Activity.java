@@ -8,13 +8,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
 
 public class About_Activity extends AppCompatActivity {
-
+    ActivityAboutBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        binding = ActivityAboutBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setTitle("About Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

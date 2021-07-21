@@ -8,13 +8,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityHowToMainBinding;
 
 public class How_to_playMainActivity extends AppCompatActivity {
-
+ActivityHowToMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_how_to_main);
+        binding = ActivityHowToMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         getSupportActionBar().setTitle("How to play");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

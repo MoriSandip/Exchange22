@@ -8,13 +8,16 @@ import android.os.Handler;
 
 import com.example.exchange22_sportstokeexchangeanalysis.MainActivity;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivitySplashBinding;
 
 public class Splash_Activity extends AppCompatActivity {
-
+ActivitySplashBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        binding = ActivitySplashBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

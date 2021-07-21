@@ -8,13 +8,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityPrivacyPolicyBinding;
 
 public class Privacy_policy_Activity extends AppCompatActivity {
-
+ActivityPrivacyPolicyBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_privacy_policy);
+        binding = ActivityPrivacyPolicyBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Privacy policy");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

@@ -14,15 +14,18 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityLegalityBinding;
 
 public class LegalityActivity extends AppCompatActivity {
-
+ActivityLegalityBinding binding;
     ImageView imageView14,imageView15,imageView16,imageView17,imageView18;
     CardView cardView,cardView1,cardView2,cardView3,cardView4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_legality);
+        binding = ActivityLegalityBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         getSupportActionBar().setTitle("Legality Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

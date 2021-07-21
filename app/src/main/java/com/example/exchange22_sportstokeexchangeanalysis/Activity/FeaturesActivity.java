@@ -8,13 +8,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityFeaturesBinding;
 
 public class FeaturesActivity extends AppCompatActivity {
-
+ActivityFeaturesBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_features);
+        binding = ActivityFeaturesBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Feature's Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

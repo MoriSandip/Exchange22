@@ -14,16 +14,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityWithdrawTermsBinding;
 
 public class Withdraw_Terms_Activity extends AppCompatActivity {
-
+ActivityWithdrawTermsBinding binding;
     ImageView img1,img2,img3;
 
     TextView textView,textView1,textView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_withdraw_terms);
+        binding = ActivityWithdrawTermsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Withdraw term - condition");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

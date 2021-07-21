@@ -12,7 +12,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-    public static int position = -1;
+
     ActivityMainBinding binding;
 
 
@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.tablayout.addTab(binding.tablayout.newTab().setText("Guide"));
         binding.tablayout.addTab(binding.tablayout.newTab().setText("Matches"));
-        binding.tablayout.getTabAt(0).getIcon().setColorFilter(getResources().getColor(android.R.color.black), PorterDuff.Mode.SRC_IN);
-        binding.tablayout.getTabAt(1).getIcon().setColorFilter(getResources().getColor(android.R.color.black), PorterDuff.Mode.SRC_IN);
+
 
         int[] imageResId = {
                 R.drawable.ic_baseline_guide,
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         }
         binding.tablayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-loadFragment();
+        loadFragment();
 
     }
     public void loadFragment() {

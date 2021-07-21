@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Exchange22sportStokeExchangeAnalysis">
-        <activity android:name=".Activity.Privacy_policy_Activity"></activity>
+        <activity android:name=".Activity.Privacy_policy_Activity" />
         <activity android:name=".Activity.Term_and_condition_Activity" />
         <activity android:name=".Activity.Contact_us_Activity" />
         <activity
