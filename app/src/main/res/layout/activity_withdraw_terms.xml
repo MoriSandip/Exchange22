@@ -68,7 +68,7 @@ However, in normal buy/sell trade, we charge 6% per trade initiated by you. Also
 \n\n
 The charges help us improve and provide you with better interface so that you can enjoy and experience the thrill better."
                 android:visibility="gone"
-                app:layout_constraintEnd_toEndOf="@+id/textView40"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
                 app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
