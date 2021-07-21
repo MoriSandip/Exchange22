@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_message);
+            navigationView.setCheckedItem(R.id.nav_home);
         }
     }
 
 
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.nav_message:
+            case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
                 break;
             case R.id.nav_chat:
