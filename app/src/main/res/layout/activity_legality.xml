@@ -30,7 +30,7 @@
                 android:layout_height="42dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView29"
                 app:layout_constraintEnd_toEndOf="@+id/textView29"
-                app:layout_constraintTop_toTopOf="@+id/textView29"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_bottom_top_foreground" />
 
             <TextView
@@ -165,7 +165,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view8" />
 
@@ -222,7 +222,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView17"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView23" />
 
@@ -270,7 +270,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView18"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view10" />

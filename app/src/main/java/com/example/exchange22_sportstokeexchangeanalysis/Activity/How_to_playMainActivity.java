@@ -12,5 +12,7 @@ public class How_to_playMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_to_main);
+
+
     }
 }
