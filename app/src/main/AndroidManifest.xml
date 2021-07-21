@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Exchange22sportStokeExchangeAnalysis">
-        <activity android:name=".MainActivity"
+        <activity android:name=".Activity.Privacy_policy_Activity"></activity>
+        <activity android:name=".Activity.Term_and_condition_Activity" />
+        <activity android:name=".Activity.Contact_us_Activity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Activity.How_to_playMainActivity" />
+        <activity android:name=".Activity.About_Activity" />
+        <activity android:name=".Activity.FeaturesActivity" />
+        <activity android:name=".Activity.Splash_Activity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,12 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.How_to_playMainActivity"/>
-        <activity android:name=".Activity.About_Activity"/>
-        <activity android:name=".Activity.FeaturesActivity"/>
-        <activity android:name=".Activity.Splash_Activity"/>
-        <activity android:name=".Activity.LegalityActivity"/>
-        <activity android:name=".Activity.Withdraw_Terms_Activity"/>
+        <activity android:name=".Activity.LegalityActivity" />
+        <activity android:name=".Activity.Withdraw_Terms_Activity" />
     </application>
 
 </manifest>

@@ -9,16 +9,14 @@ import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 
-public class FeaturesActivity extends AppCompatActivity {
+public class Term_and_condition_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_features);
-        getSupportActionBar().setTitle("Feature's Details");
+        setContentView(R.layout.activity_term_and_condition);
+        getSupportActionBar().setTitle("Term and contition");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
 
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
