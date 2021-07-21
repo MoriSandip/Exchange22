@@ -1,9 +1,15 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Fragment;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.net.Uri;
 import android.os.Bundle;
+
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -11,15 +17,19 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 
 public class HomeFragment extends Fragment {
 
     private TabLayout tabLayout;
+    CardView cardView;
     private ViewPager viewPager;
     private int tabIcons[] = {R.drawable.ic_baseline_guide,
             R.drawable.ic_baseline_games_24};
@@ -39,6 +49,44 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
+        cardView = view.findViewById(R.id.cardView2);
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CharSequence options[] = new CharSequence[]{
+                        "Download",
+                        "View",
+                        "Cancel"
+                };
+                AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+                builder.setTitle("Choose One");
+                builder.setItems(options, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // we will be downloading the pdf
+                        String uri=  "http://app.exchange22.com/admin/apk/Exchange22.apk";
+                        if (which == 0) {
+
+                           // Toast.makeText(holder.itemView.getContext(),"dow", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                            startActivity(intent);
+                        }
+                        // We will view the pdf
+                        if (which == 1) {
+
+                          /* // Toast.makeText(holder.itemView.getContext(),"Faild", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(v.getContext(), ViewPdfActivity.class);
+                            intent.putExtra("url", uri);
+                            holder.itemView.getContext().startActivity(intent);*/
+                        }
+                    }
+                });
+                builder.show();
+                //Toast.makeText(holder.itemView.getContext(), "dffadfdf", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         tabLayout = (TabLayout) view.findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
