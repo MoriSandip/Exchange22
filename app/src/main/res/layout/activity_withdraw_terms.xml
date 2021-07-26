@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/new_background_green2"
     tools:context=".Activity.Withdraw_Terms_Activity">
 
     <androidx.core.widget.NestedScrollView

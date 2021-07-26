@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/new_background_green2"
     tools:context=".Activity.About_Activity">
 
     <TextView
@@ -12,10 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:lineSpacingExtra="8sp"
         android:text="\nExchange22 bring together India’s two favourite passion; sports and trading. The first of its’ kind sports fantasy league; Sports stock exchange.\n\nFounded in 2019, one of its kind sports fantasy concept, which merges sports and trading, along the lines of how a stock exchange operates. Instead of trading of stocks of companies, players’ are traded. \n\nWe believe that this one of a kind concept of sports fantasy league will redefine the fantasy league concept and set new benchmarks for its simple, user friendly interface and gameplay, letting the user enjoy and experience the game in a never before manner and even make money out of it.  \n\nExchange22 is owned and operated by Hulm Entertainment Pvt. Ltd."
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

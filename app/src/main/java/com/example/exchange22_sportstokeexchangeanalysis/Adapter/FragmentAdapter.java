@@ -2,34 +2,41 @@ package com.example.exchange22_sportstokeexchangeanalysis.Adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Guide_Fragment;
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Matches_Fragment;
 
-public class FragmentAdapter extends FragmentStatePagerAdapter {
+import java.util.ArrayList;
 
-    public FragmentAdapter(FragmentManager fm) {
+public  class FragmentAdapter extends FragmentPagerAdapter {
+
+    private ArrayList<Fragment> fragments;
+    private ArrayList<String> titles;
+
+    public FragmentAdapter( FragmentManager fm) {
         super(fm);
+        this.fragments=new ArrayList<>();
+        this.titles=new ArrayList<>();
     }
+    public void addFragments(Fragment fragment, String title){
+        fragments.add(fragment);
+        titles.add(title);
+    }
+
 
     @Override
     public Fragment getItem(int position) {
-        switch (position) {
-            case 0:
-                Guide_Fragment tab1 = new Guide_Fragment();
-                return tab1;
-            case 1:
-                Matches_Fragment tab2 = new Matches_Fragment();
-                return tab2;
-
-            default:
-                return null;
-        }
+        return fragments.get(position);
+    }
+    @Override
+    public int getCount() {
+        return fragments.size();
     }
 
     @Override
-    public int getCount() {
-        return 2;
+    public CharSequence getPageTitle(int position) {
+        return titles.get(position);
     }
 }

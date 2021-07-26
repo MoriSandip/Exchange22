@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
+    android:background="@color/new_background_green"
     android:layout_height="match_parent"
     tools:context=".Fragment.Guide_Fragment">
 
@@ -25,6 +26,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/how_to_play"
                 app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/cardView10">
@@ -32,18 +34,18 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/contactimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ll"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -72,6 +74,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/how_to_play"
                 app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/cardView9">
@@ -79,18 +82,19 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/aboutimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ic_outline_contact_phone_24"
+                        android:tint="@color/black"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -119,6 +123,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/how_to_play"
                 app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/cardView8">
@@ -126,18 +131,18 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ll"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -166,6 +171,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/how_to_play"
                 app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/cardView6">
@@ -173,18 +179,18 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/trmconditionimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ll"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -212,31 +218,27 @@
                 android:id="@+id/cardView6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 app:cardCornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/how_to_play"
+                app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/cardView5">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/withdarw_termimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ic_wallet_foreground"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -264,31 +266,27 @@
                 android:id="@+id/cardView5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 app:cardCornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/how_to_play"
+                app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/feature">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/legalityimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ll"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -316,11 +314,11 @@
                 android:id="@+id/how_to_play"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -329,38 +327,38 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/how_to_playimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ll"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
                         android:id="@+id/how_to_playtextView8"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
                         android:text="How to play"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@+id/how_to_playimageView3"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/how_to_playimageView3" />
+                        app:layout_constraintStart_toEndOf="@+id/how_to_playimageView3"
+                        app:layout_constraintTop_toTopOf="@+id/how_to_playimageView3" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -368,31 +366,27 @@
                 android:id="@+id/feature"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 app:cardCornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/how_to_play"
+                app:layout_constraintStart_toStartOf="@+id/how_to_play"
                 app:layout_constraintTop_toBottomOf="@+id/how_to_play">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bnt_back">
+                    android:background="@color/new_background_green2">
 
                     <ImageView
                         android:id="@+id/featureimageView3"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_home_foreground"
+                        android:src="@drawable/ll"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.324"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />

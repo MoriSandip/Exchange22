@@ -4,6 +4,973 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/new_background_green2"
     tools:context=".Activity.Term_and_condition_Activity">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/textView76intro14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="14. Limitation of Liability"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro14"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro14" />
+
+                <ImageView
+                    android:id="@+id/imageView36intro14"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="
+By accepting the Terms and Conditions of Exchange22, the User using Services provided by Exchange22 agree to provide true, accurate, current and complete information while registration and at other times when demanded by Exchange22. The User further provides consent to keeping his/her registration information updated at all times.\n\n
+A single user is permitted to register or operate only one user account with Exchange22 Portal (inclusive of both web &amp; app).\n\n
+The User using the services provided by Exchange22 provides his/her consents for receiving all the communications from Exchange22 by marking e-mails from Exchange22.com as part of their safe senders list. In an event, if any of the emails sent by Exchange22 remains unread by the User because of being sent to the Spam or Junk folders, Exchange22 shall not be held responsible.\n\n
+Any passwords issued by Exchange22 to any of the individual using the services provided by Exchange22 are confidential and should not be shared by the users with anyone else. The User holds the sole responsibility of maintaining the confidentiality of their accounts and passwords. The User offers his/her consent by agreeing to the Terms and Conditions of Exchange22 to inform Exchange22 about any unauthorized use of their passwords or accounts or any other breach of security.\n\n
+The User is solely responsible for the security and confidentiality of his/her payment accounts linked to his/her Exchange22 account. In case of any misuse of the linked payment accounts of the user, Exchange22 shall not be held liable; further, such misuse of the linked payment accounts of the user should be reported to Exchange22 as soon as it comes to the notice of the user.\n\n
+The User ensures to exit/log-out of their accounts after the completion of each session. In case of any sort of loss or damage faced by the user due to the failure of abiding these rules and regulations, Exchange22 shall not be held responsible.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro14"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro14"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro14" />
+
+                <View
+                    android:id="@+id/view22intro14"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro14"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro14" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+
+                <TextView
+                    android:id="@+id/textView76intro10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="10.. User Restrictions"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro10"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro10" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro10"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="
+By accepting the Terms and Conditions of Exchange22, the User using Services provided by Exchange22 agree to provide true, accurate, current and complete information while registration and at other times when demanded by Exchange22. The User further provides consent to keeping his/her registration information updated at all times.\n\n
+A single user is permitted to register or operate only one user account with Exchange22 Portal (inclusive of both web &amp; app).\n\n
+The User using the services provided by Exchange22 provides his/her consents for receiving all the communications from Exchange22 by marking e-mails from Exchange22.com as part of their safe senders list. In an event, if any of the emails sent by Exchange22 remains unread by the User because of being sent to the Spam or Junk folders, Exchange22 shall not be held responsible.\n\n
+Any passwords issued by Exchange22 to any of the individual using the services provided by Exchange22 are confidential and should not be shared by the users with anyone else. The User holds the sole responsibility of maintaining the confidentiality of their accounts and passwords. The User offers his/her consent by agreeing to the Terms and Conditions of Exchange22 to inform Exchange22 about any unauthorized use of their passwords or accounts or any other breach of security.\n\n
+The User is solely responsible for the security and confidentiality of his/her payment accounts linked to his/her Exchange22 account. In case of any misuse of the linked payment accounts of the user, Exchange22 shall not be held liable; further, such misuse of the linked payment accounts of the user should be reported to Exchange22 as soon as it comes to the notice of the user.\n\n
+The User ensures to exit/log-out of their accounts after the completion of each session. In case of any sort of loss or damage faced by the user due to the failure of abiding these rules and regulations, Exchange22 shall not be held responsible.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro10"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro10"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro10" />
+
+                <View
+                    android:id="@+id/view22intro10"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro10"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro10" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
+
+                <TextView
+                    android:id="@+id/textView76"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="9. User Account Operation"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="
+By accepting the Terms and Conditions of Exchange22, the User using Services provided by Exchange22 agree to provide true, accurate, current and complete information while registration and at other times when demanded by Exchange22. The User further provides consent to keeping his/her registration information updated at all times.\n\n
+A single user is permitted to register or operate only one user account with Exchange22 Portal (inclusive of both web &amp; app).\n\n
+The User using the services provided by Exchange22 provides his/her consents for receiving all the communications from Exchange22 by marking e-mails from Exchange22.com as part of their safe senders list. In an event, if any of the emails sent by Exchange22 remains unread by the User because of being sent to the Spam or Junk folders, Exchange22 shall not be held responsible.\n\n
+Any passwords issued by Exchange22 to any of the individual using the services provided by Exchange22 are confidential and should not be shared by the users with anyone else. The User holds the sole responsibility of maintaining the confidentiality of their accounts and passwords. The User offers his/her consent by agreeing to the Terms and Conditions of Exchange22 to inform Exchange22 about any unauthorized use of their passwords or accounts or any other breach of security.\n\n
+The User is solely responsible for the security and confidentiality of his/her payment accounts linked to his/her Exchange22 account. In case of any misuse of the linked payment accounts of the user, Exchange22 shall not be held liable; further, such misuse of the linked payment accounts of the user should be reported to Exchange22 as soon as it comes to the notice of the user.\n\n
+The User ensures to exit/log-out of their accounts after the completion of each session. In case of any sort of loss or damage faced by the user due to the failure of abiding these rules and regulations, Exchange22 shall not be held responsible.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                    app:layout_constraintStart_toStartOf="@+id/textView76"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36" />
+
+                <View
+                    android:id="@+id/view22"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout12">
+
+                <TextView
+                    android:id="@+id/textView76intro13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="13.  Disclaimers"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro13"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro13"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="
+By accepting the Terms and Conditions of Exchange22, the User using Services provided by Exchange22 agree to provide true, accurate, current and complete information while registration and at other times when demanded by Exchange22. The User further provides consent to keeping his/her registration information updated at all times.\n\n
+A single user is permitted to register or operate only one user account with Exchange22 Portal (inclusive of both web &amp; app).\n\n
+The User using the services provided by Exchange22 provides his/her consents for receiving all the communications from Exchange22 by marking e-mails from Exchange22.com as part of their safe senders list. In an event, if any of the emails sent by Exchange22 remains unread by the User because of being sent to the Spam or Junk folders, Exchange22 shall not be held responsible.\n\n
+Any passwords issued by Exchange22 to any of the individual using the services provided by Exchange22 are confidential and should not be shared by the users with anyone else. The User holds the sole responsibility of maintaining the confidentiality of their accounts and passwords. The User offers his/her consent by agreeing to the Terms and Conditions of Exchange22 to inform Exchange22 about any unauthorized use of their passwords or accounts or any other breach of security.\n\n
+The User is solely responsible for the security and confidentiality of his/her payment accounts linked to his/her Exchange22 account. In case of any misuse of the linked payment accounts of the user, Exchange22 shall not be held liable; further, such misuse of the linked payment accounts of the user should be reported to Exchange22 as soon as it comes to the notice of the user.\n\n
+The User ensures to exit/log-out of their accounts after the completion of each session. In case of any sort of loss or damage faced by the user due to the failure of abiding these rules and regulations, Exchange22 shall not be held responsible.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro13"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro13"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro13" />
+
+                <View
+                    android:id="@+id/view22intro13"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro13"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro13"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro13" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+
+                <TextView
+                    android:id="@+id/textView76intro11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="11. Technical glitches"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro11"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro11" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro11"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="
+By accepting the Terms and Conditions of Exchange22, the User using Services provided by Exchange22 agree to provide true, accurate, current and complete information while registration and at other times when demanded by Exchange22. The User further provides consent to keeping his/her registration information updated at all times.\n\n
+A single user is permitted to register or operate only one user account with Exchange22 Portal (inclusive of both web &amp; app).\n\n
+The User using the services provided by Exchange22 provides his/her consents for receiving all the communications from Exchange22 by marking e-mails from Exchange22.com as part of their safe senders list. In an event, if any of the emails sent by Exchange22 remains unread by the User because of being sent to the Spam or Junk folders, Exchange22 shall not be held responsible.\n\n
+Any passwords issued by Exchange22 to any of the individual using the services provided by Exchange22 are confidential and should not be shared by the users with anyone else. The User holds the sole responsibility of maintaining the confidentiality of their accounts and passwords. The User offers his/her consent by agreeing to the Terms and Conditions of Exchange22 to inform Exchange22 about any unauthorized use of their passwords or accounts or any other breach of security.\n\n
+The User is solely responsible for the security and confidentiality of his/her payment accounts linked to his/her Exchange22 account. In case of any misuse of the linked payment accounts of the user, Exchange22 shall not be held liable; further, such misuse of the linked payment accounts of the user should be reported to Exchange22 as soon as it comes to the notice of the user.\n\n
+The User ensures to exit/log-out of their accounts after the completion of each session. In case of any sort of loss or damage faced by the user due to the failure of abiding these rules and regulations, Exchange22 shall not be held responsible.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro11"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro11"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro11" />
+
+                <View
+                    android:id="@+id/view22intro11"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro11"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro11"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro11" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout11">
+
+                <TextView
+                    android:id="@+id/textView76intro12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="12. Withdrawal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro12"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro12"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="
+By accepting the Terms and Conditions of Exchange22, the User using Services provided by Exchange22 agree to provide true, accurate, current and complete information while registration and at other times when demanded by Exchange22. The User further provides consent to keeping his/her registration information updated at all times.\n\n
+A single user is permitted to register or operate only one user account with Exchange22 Portal (inclusive of both web &amp; app).\n\n
+The User using the services provided by Exchange22 provides his/her consents for receiving all the communications from Exchange22 by marking e-mails from Exchange22.com as part of their safe senders list. In an event, if any of the emails sent by Exchange22 remains unread by the User because of being sent to the Spam or Junk folders, Exchange22 shall not be held responsible.\n\n
+Any passwords issued by Exchange22 to any of the individual using the services provided by Exchange22 are confidential and should not be shared by the users with anyone else. The User holds the sole responsibility of maintaining the confidentiality of their accounts and passwords. The User offers his/her consent by agreeing to the Terms and Conditions of Exchange22 to inform Exchange22 about any unauthorized use of their passwords or accounts or any other breach of security.\n\n
+The User is solely responsible for the security and confidentiality of his/her payment accounts linked to his/her Exchange22 account. In case of any misuse of the linked payment accounts of the user, Exchange22 shall not be held liable; further, such misuse of the linked payment accounts of the user should be reported to Exchange22 as soon as it comes to the notice of the user.\n\n
+The User ensures to exit/log-out of their accounts after the completion of each session. In case of any sort of loss or damage faced by the user due to the failure of abiding these rules and regulations, Exchange22 shall not be held responsible.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro12"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro12"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro12" />
+
+                <View
+                    android:id="@+id/view22intro12"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro12"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro12" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+                <TextView
+                    android:id="@+id/textView76intro8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="8. User Registration"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro8"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro8" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro8"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="In order to register for the Contest(s), User(s) are required to provide the following information accurately:\n\n
+\t\tFull Name
+\n\t\tE-mail Address
+\n\t\tPassword
+\n\t\tComplete Address
+\n\t\tGender
+\n\t\tDate of Birth
+\n\nThe Full Name and Date of Birth mentioned by the User for the purpose of verification should match with the Name and Date of Birth mentioned on all the documents required to be uploaded for verification purposes.
+\n\n
+The User participating in activities, services or features provided by Exchange22 are required to provide their approval stating they have carefully read all the terms and conditions and will comply with all the rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services.\n\n
+The User(s) entering any contest(s) organized by Exchange22 as a resident of Sikkim, Assam, Odisha, Telangana, Nagaland, Andhra Pradesh and Tamil Nadu will not be permitted to sign up for any round in the paid version of the Contest as elaborated below. In case of audits from Exchange22, if a user is found to be a resident of Sikkim, Assam, Odisha, Telangana or Nagaland, Andhra Pradesh and Tamil Nadu but not stated at the time of registration then Exchange22 at its sole and absolute discretion holds the rights to take action against such user including (but not limited to) blocking of user account, deletion or deactivation of user account, and resetting the user account to initial level by deleting all the logs, refers &amp; reducing the amount present in the user wallet to “zero”. In an event, the state laws of these states change and the residents of these states are allowed to participate in the paid versions of Game of Skills, the users (which were blocked earlier for being a resident of these states) shall be treated as new registrations and in no case previous winnings shall be considered and any claim of such sort will not be entertained in any case.\n\n
+The User(s) who are only above the age of 18 years and have successfully completed their registration process by entering valid and adequate information in the registration form are sent a confirmation email comprising their login details.\nOnly those User(s) who have successfully registered on the Exchange22 App as well as registered prior to each round in accordance with the procedure outlined above shall be eligible to participate in the Contest(s) and win.\n\n
+\n\nIn case of PAN card verification, it is mandatory to upload a full image of the original PAN card. No scanned image of a photocopy of the users’ PAN card will be acceptable for verification purposes.
+\n\nIn case, you are uploading an E-PAN card for PAN card verification process then it is mandatory to upload a full scanned image of the E-PAN card (both front and back).\n\n
+Exchange22 reserves the right to disallow you from logging into the Portal or reduce your play limits until we are able to satisfactorily validate your user account. Exchange22 will in such events email you to notify you of the next steps regarding user account validation. We may also ask you for proof of identification and proof of address from time to time.\n\n
+Upon receipt of suitable documents, we will try our best to enable your user account at the earliest. However, it may take a few business days to reinstate your user account.\n\n
+In the event the address provided by you is incorrect, Exchange22 will not make any additional attempts for delivery of the cheque unless a correct address is provided by you and charges for redelivery as prescribed by us are paid by you.\n\n
+The Privacy Policy of our Portal forms a part of the Terms. All personal information which is of such nature that requires protection from unauthorized dissemination shall be dealt with in the manner provided in the Privacy Policy of the Portal.
+
+
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro8"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro8"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro8" />
+
+                <View
+                    android:id="@+id/view22intro8"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro8"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+                <TextView
+                    android:id="@+id/textView76intro7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="7. User Representations"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro7"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro7" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro7"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+
+
+                    android:text="Any information provided by you (the User) to us, whether at the stage of registration or during anytime subsequently, should be authentic.\n\nPrior to adding cash to your user account or participating in Contest(s), the responsibility to satisfy the legality of such Contest(s) in the jurisdiction from where you are accessing the Contest(s) shall be on you. If you are not legally competent to individually enter into Indian Rupee transactions through banking channels in India and/or are not accessing any Portal from a permitted jurisdiction, you are prohibited from participating in Contest(s) on the Portal. In the event of such violation, your participation in Contest(s) will be deemed to be in breach of the Terms and you will not be entitled to receive any prize that you might win in such Contest(s).\n\n
+You represent that you are 18 years of age or older to participate in any Contest(s) and are also otherwise competent to enter into transactions with other users and us. You are aware that participation in the Contest(s) organized by us, hereinafter referred to as 'Activity' may result in financial loss to you. With full knowledge of the facts and circumstances surrounding this Activity, you are voluntarily participating in the Activity and assume all responsibility and risk resulting from your participation, including all risk of financial loss. You agree to indemnify and hold us, our employees, directors, officers, and agents harmless with respect to any and all claims and costs associated with your participation in the Activity.\n\n
+You represent that you have the experience and the requisite skills and knowledge required to participate in the Activity and that you are not aware of any physical or mental condition that would impair your capability to fully participate in the Activity. You further acknowledge that you are solely responsible for any consequence resulting from you participating in this Activity or being associated with this Activity or around this Activity. You understand that we assume no liability or responsibility for any financial loss that you may sustain as a result of your participation in the Activity.\n\n
+You understand and accept that your participation in a Contest available on the Portal does not create any obligation on us to give you any winnings. Your winnings are entirely dependent on your skill as a player vis-a-vis other players in the Contest and subject to the rules of the Contest.\n\n
+You understand and agree that you are solely responsible for all content posted, transmitted, uploaded or otherwise made available on the Portal by you. All content posted by you must be legally owned by or licensed to you. By publishing any content on the Website, you agree to grant us a royalty-free, world-wide, non- exclusive, perpetual and assignable right to use, copy, reproduce, modify, adapt, publish, edit, translate, create derivative works from, transmit, distribute, publicly display, and publicly perform your content and to use such content in any related marketing materials produced by us or our affiliates. Such content may include, without limitation, your name, username, location, messages, gender or pictures. You also understand that you do not obtain any rights, legal or equitable, in any material incorporating your content. You further agree and acknowledge that we have the right to use in any manner whatsoever, all communication or feedback provided by you.\n\n
+You understand and accept that we reserve the right to record any and all user content produced by way of but not limited to chat messages on the Portal through our feature, through the in-game chat facility or other interactive features, if any, offered as part of the Services.\n\n
+You shall not hold us responsible for not being able to play any Contest(s) for which you may be eligible to participate. This includes but is not limited to situations where you are unable to log into your user account as your user account may be pending validation or you may be suspected or established violation of any of the Terms.\n\n
+You understand and accept that by viewing or using the Portal or availing of any Services, or using communication features on the Portal, you may be exposed to content posted by other users which you may find offensive, objectionable or indecent. You may bring such content posted by other users to our notice that you may find offensive, objectionable or indecent and we reserve the right to act upon it as we may deem fit. The decision taken by us on this regard shall be final and binding on you.
+
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro7"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro7"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro7" />
+
+                <View
+                    android:id="@+id/view22intro7"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro7"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro7" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                <TextView
+                    android:id="@+id/textView76intro6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="6. Privacy Policy"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro6"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro6" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro6"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="All information collected from users, such as registration and payment information, is subject to Exchange22’s Privacy Policy which is available at Privacy Policy."
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro6"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro6"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro6" />
+
+                <View
+                    android:id="@+id/view22intro6"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro6"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro6" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                <TextView
+                    android:id="@+id/textView76intro5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="5. Third Party Sites, Services and Products"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro5"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro5" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro5"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Exchange22 Portal may contain information about or hyperlinks to third parties. In such cases, Exchange22 shall not be held responsible in any manner and do not extend any express or implied warranty to the accuracy, integrity or quality of the content belonging to such third party websites or apps or for any content posted on any third-party Internet site. Further, the involvement of Exchange22 with any of the third-party content or links to third-party Internet sites is not related to any sort of endorsement by Exchange22 of such third-party Internet site. If you rely on any third party Content posted on any website or app which does not belong to Exchange22, you may do so solely at your own risk and liability.\n\nExchange22 is neither associated with nor responsible for the correspondence, transactions, and all other related activities between the user and third parties including payment gateway providers and verification service providers on Exchange22. The users' involvement with third parties is entirely dependent on the terms and conditions, policies and services terms of these third parties and the users are solely responsible for reviewing the policies, terms and conditions, and the service terms of these third parties before transacting or availing any of the services. Accepting the Terms and Conditions of Exchange22 the users agree that Exchange22 is not responsible for any sort of damage or loss faced by the users due to any sort of transactions, correspondence and all related activities with any of the third parties. Any questions, complaints, or claims related to any third party product or service should be directed to the appropriate vendor."
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro5"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro5" />
+
+                <View
+                    android:id="@+id/view22intro5"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro5"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <TextView
+                    android:id="@+id/textView76intro4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="4. Usage of Exchange22"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro4"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro4" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro4"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Any person accessing the services or otherwise offered by Exchange22 on the Portal for the purpose of participating in trading of player(s) in any matches made available on the Exchange22 portal, hereinafter referred to as “Contest(s)” shall be bound by these Terms and Conditions, and all other rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services.\n\nExchange22 shall have all the rights to modify or change the already defined Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services at any point in time, by posting the same on Exchange22. Use of Exchange22 constitutes the User’s acceptance and agreement of such Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services, as amended from time to time. Exchange22 may, at its sole discretion, notify the User of any modification or amendment in these Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services by sending an email to the User's registered email address or posting notifications in the User accounts. In a circumstance wherein the User disagrees or does not accepts the amendments in the Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services, can use the options provided in such an email or notification to indicate their non-acceptance within a defined time frame. If a user fails to indicate his/ her non-acceptance of the amendments within the defined time period the User shall be deemed to have accepted the changes or modification in these Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services.\n\nCertain Exchange22 services offered by Exchange22 might be subjected to additional rules and regulations formulated in that respect. To that extent that these Terms and Conditions are inconsistent with the additional conditions formulated, the additional conditions shall prevail\n\nExchange22 may, at its sole and absolute discretion:\n\n\t\t\n\n\t\tRestrict, suspend, or terminate any User’s access to all or any part of Exchange22;
+\n\n\t\tChange, suspend, or discontinue all or any part of the Exchange22 Portal Services;
+\n\n\t\tDeactivate or delete a User’s account and all related information and files on the account;
+\n\n\t\tReject, move, or remove any material that may be submitted by a User;
+\n\n\t\tMove or remove any content that is available on Exchange22;
+\n\n\t\tEstablish general practices and limits concerning use of Exchange22 Portal;
+\n\n\t\tRevise or make additions to the roster of players available for selection in a Contest on account of revisions to the roster of players involved in the relevant Sports Event; and
+\n\n\t\tAssign its rights and liabilities to all User accounts hereunder to any entity (post intimation of such assignment shall be sent to all Users to their registered email ids).
+\n\n\t\tExchange22 holds all the rights to restrict, suspend or terminate a user’s access to all or any part of Exchange22 provided by Exchange22, deactivate or delete user account and information, delete user content without any prior notice to the user if any user is found or believed to be breaching the Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services illegally or inappropriately. Further, Exchange22 is authorized to take any technical or legal action against the user if deems necessary.\n\ntext
+In the event of suspension or deletion of a user's account due to negligence on the part of Exchange22, then, the company shall repay the fee charged for any of the Services provided by Exchange22, without any delay. However, no refund would be made in case of suspension or removal due to any breach of the Terms and Conditions, rules, regulations, and terms of use referred to herein or provided by Exchange22 in relation to Exchange22 services or inappropriate use of Exchange22; or any circumstances beyond the reasonable control of Exchange22.
+\n\nThe users consent to receive communications including announcements, administrative messages, and advertisements from Exchange22 or any of its partners, licensors or associates."
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro4"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro4" />
+
+                <View
+                    android:id="@+id/view22intro4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro4"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <TextView
+                    android:id="@+id/textView76intro3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="3. Intellectual property"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro3"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro3" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro3"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Hulm Entertainment Private Limited hold all rights tangible or intangible for the Portal including (but not limited to) games, contests, advertisements, written content, photographs, graphics, images, illustrations, marks, logos, audio or video clippings, flash animation and all the services offered on the website including but not limited to all games and other content, promotional material, inter alia all strategic and development plans, ideas, designs, financial conditions, business plans, data banks, information related to technology and process, the technology developed including the software and methodology of usage, hereinafter collectively referred to as “Intellectual Property”.\n\nYou (the user) are granted a personal, non-exclusive, non-assignable and non-transferrable license to use the Content solely for the purposes of accessing and using the Services and for no other purposes whatsoever. The user shall not sublicense, assign or transfer the license granted, or shall rent / lease or any part of such license or of the Content included in such license. No transfer, copy, reproduction, distribution, exploitation, disassembling, translating, decoding, altering or make derivations from or make any other use of the Content on the Portal in any manner other than as permitted for obtaining Services on the Portal.\n\nNo right, title or interest in any downloaded materials or software is transferred to you by downloading and you are expressly prohibited from using such materials for any commercial purposes unless agreed with us in writing. All other trademarks are the property of their respective owners."
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro3"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro3" />
+
+                <View
+                    android:id="@+id/view22intro3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro3"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <TextView
+                    android:id="@+id/textView76intro2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="2. Legality"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro2"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro2" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro2"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Games of skill are legal as they are excluded from the ambit of Indian gambling legislations including the Public Gaming Act of 1867. The Indian Supreme Court in the cases of State of Andhra Pradesh v. K Satyanaryana (AIR 1968 SC 825) and KR Lakshmanan v. State of Tamil Nadu (AIR 1996 SC 1153) has held that a game in which success depends predominantly on the superior knowledge, attention, experience and adroitness of the player shall be classified as a game of skill. \n\nThe Content (across Exchange22) are games of skill as success of User(s) depends primarily on their superior knowledge of the game, knowledge of the players’ relative form, players’ performance across formats and conditions in fantasy games. By participating, each user acknowledges and agrees that he/she is participating in a game of skill."
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro2"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro2" />
+
+                <View
+                    android:id="@+id/view22intro2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro2"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView76intro1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="1. Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36intro1"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView36intro1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36intro1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView36intro1"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+                <TextView
+                    android:id="@+id/textView77intro1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="These terms of conditions governs the rights between Hulm Entertainment Private Limited, its subsidiaries, affiliates, licensors, associates and partners, hereinafter referred to as The Company, we, us, our and such other adjectives and you (the user) hereinafter referred to as you, user, your, player, participants in relation to the use of products and/or services, hereinafter referred to as Services through its website www.exchange22.com and the Exchange22 App on both android and iOS devices, hereinafter collectively referred to as the Portal are all subject to and governed by these Terms and Conditions, Privacy Policy, including any subsections in the Portal, hereinafter referred to as Terms.
+\n\nThe terms and conditions must be read by you (user) completely and well understood before agreeing to the said terms of usage, service governing any and all relationship with the products and services offered by the Portal. You understand that the Terms will be binding on you and agree that Services offered on the Portal can be accessed only in accordance with the Terms and it shall be your duty to comply with the Terms at all times. You are responsible to be aware of and agree to abide by the Terms as published and periodically amended or modified by Hulm Entertainment Private Limited.
+"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro1"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro1"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView36intro1" />
+
+                <View
+                    android:id="@+id/view22intro1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36intro1"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="@+id/textView76intro1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77intro1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

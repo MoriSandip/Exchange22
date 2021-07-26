@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/new_background_green2"
     tools:context=".Activity.Privacy_policy_Activity">
 
     <View
@@ -23,8 +24,10 @@
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view6">
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -43,6 +46,7 @@
                 android:lineSpacingExtra="8sp"
                 android:text='This privacy policy forms part of our “Portal’s” (hereinafter collectively refers to partner website(s) and mobile application(s))Terms and Conditions, by accepting the Terms and Conditions and the Privacy Policy on the registration page, any person utilizing the Portal, hereinafter referred to as the "User or “you” or “your” or any of its features including participation in the various contests, games (including fantasy games, hereinafter referred to as "Contest(s)""Services" being conducted on the Portal shall be bound by this Privacy Policy. You consent to provide Personal Information and are aware of the purpose of sharing such information. If you do not wish to consent to sharing of the mandatory personal information with Hulm Entertainment Private Limited hereinafter referred to as “Exchange22” or “we” or “us” or “our”, requested at the time of registration, request you to not to proceed with the registration. Registration procedure cannot be completed until information in the non-optional fields is provided
         \n\nAt Exchange22, we aim to provide you with a safe, protected and reliable environment to play.We understand and respect your privacy and thus assure you that any Personal Information provided by you toExchange22 is protected and will be dealt with in accordance to this Policy. Exchange22 shall not provide, distribute, trade, sell or rent your name, e-mail address or other personal information provided on this site to any third party or information related to your usage of the Portal, except as provided in this Privacy Policy.'
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -68,10 +72,11 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView30"
                 app:layout_constraintEnd_toEndOf="@+id/textView58"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
-                tools:layout_editor_absoluteY="255dp" />
+                app:layout_constraintTop_toTopOf="@+id/imageView30" />
 
             <TextView
                 android:id="@+id/textView60"
@@ -81,9 +86,11 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView31"
                 app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
-                tools:layout_editor_absoluteY="358dp" />
+                app:layout_constraintTop_toTopOf="@+id/imageView31" />
 
             <TextView
                 android:id="@+id/textView61"
@@ -93,9 +100,10 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView32"
                 app:layout_constraintEnd_toEndOf="@+id/textView58"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
-                tools:layout_editor_absoluteY="439dp" />
+                app:layout_constraintTop_toTopOf="@+id/imageView32" />
 
             <TextView
                 android:id="@+id/textView62"
@@ -105,9 +113,10 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView33"
                 app:layout_constraintEnd_toEndOf="@+id/textView58"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
-                tools:layout_editor_absoluteY="508dp" />
+                app:layout_constraintTop_toTopOf="@+id/imageView33" />
 
             <TextView
                 android:id="@+id/textView63"
@@ -117,9 +126,10 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView34"
                 app:layout_constraintEnd_toEndOf="@+id/textView58"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
-                tools:layout_editor_absoluteY="581dp" />
+                app:layout_constraintTop_toTopOf="@+id/imageView34" />
 
             <TextView
                 android:id="@+id/textView64"
@@ -129,20 +139,47 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView35"
                 app:layout_constraintEnd_toEndOf="@+id/textView58"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
-                tools:layout_editor_absoluteY="671dp" />
+                app:layout_constraintTop_toTopOf="@+id/imageView35" />
 
             <TextView
                 android:id="@+id/textView65"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                android:layout_marginTop="8dp"
+                android:text="The information collected from you (the user) will be in the course of providing you with access to the Services and to the features offered through the Portal.
+                \n\nUser's Personal Information includes the following types of Personal data or Information which has been categorised as under:
+
+\n\nSensitive Personal Data:
+\n\nWe do not normally collect Sensitive Personal Data except in accordance with or subject to this Privacy Policy. However, in certain circumstances, we may collect such information including but not limited to Financial information such as Bank account or credit card or debit card or other payment instrument details used by you to make any payments. We may also collect your PAN number details (as and when applicable).
+\n\nYou explicitly consent to provide such information as and when needed in accordance with this Privacy Policy and/or any agreement/contract entered into between Hulm Entertainment Private Limited and the User. Except for any financial information that you choose to provide while making payment for any Services on the Portal, Hulm Entertainment Private Limited does not collect any other Sensitive Personal Data in the course of providing the Services.
+\n\nFinancial information such as Bank account or credit card or debit card or other payment instrument details
+\n\nOther Personal Information:
+\n\n\t\tName
+\n\t\t
+Date of birth\n\t\t
+Contact number\n\t\t
+Postal/Contact address\n\t\t
+Account password\n\t\t
+The IP address of your computer, browser type and language.\n\t\t
+The date and the time during which you accessed the site.\n\t\t
+The address of the website which you may have used to link to the Website.\n\t\t
+Such other information that is defined as sensitive personal data or information in law.
+\n\nInformation from Social Media Platforms and Other Intermediaries:
+\n\nFurther, Exchange22 collects certain user information from social media platforms such as Facebook and intermediaries such as Google in order to help the users create an account on the Exchange22 Portal. The information collected by Exchange22 is stored in the database of Exchange22 and further displayed in the Profile section of the User in order to provide an identification of the User on the Exchange22 Portal.
+\n\n\t\tEmail Address:The email-id of the user using Facebook and Google services is collected by Exchange22 upon the user’s registration on the Portal using either of the social media platforms. The email-id collected by Exchange22 from such social media platforms is used to display in the user profile section of the User using Exchange22 services.
+\n\n\t\tName:Exchange22 also collects the name of the User who registers on Exchange22 through Facebook and Google. The name of the User to be displayed on the profile of the User so as validate the User as a verified user of Exchange22.
+\n\n\t\tDate of Birth:The Exchange22 Portal additionally collects the Date of Birth of the User when the individual upon registering on the Portal using either Facebook or Google. The Date of Birth collected is used by Exchange22 to authenticate the age of the User.
+\n\nYou shall be entitled to update the information provided by you by contacting us whichshall be updated subject to reasonable checks and confirmation by Exchange22.
+\n\nWe restrict access of personal information to our employees, contractors and agents and only allow access to those who need to know that information in order to process it on our behalf.
+
+
+
+"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView26"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
                 app:layout_constraintTop_toBottomOf="@+id/imageView26" />
 
@@ -157,9 +194,231 @@
 
             <View
                 android:id="@+id/view15"
-                android:layout_width="250dp"
+                android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:background="@color/black" />
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView60"
+                app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/view15"
+
+
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+
+            <TextView
+                android:id="@+id/textView70"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="All users of Exchange22 consent to the use of Sensitive Personal Data and Other Personal Information for the purpose stated in this policy. Exchange22 may use the information gathered for the following purposes:
+\n\nFor the Purpose of Registration and to provide you access to the Services and features offered through the Portal and to verify your identity, Users would be required to provide certain information for the registration process namely:
+\n\n\t\t
+1) Username
+\n\t\t
+2) Password
+\n\t\t
+3) Email address
+\n\t\t
+4) Date of birth
+\n\t\t
+4) PAN number (as applicable)
+\n\nIn certain instances, we may collect certain Sensitive Personal Data from you on the Portalsuch as information regarding the payment instrument/modes used by you to make such payments, which may include cardholder name, credit/debit card number (in encrypted form) with expiration date, banking details, wallet details etc. This information is presented to you at the time of making a payment to enable you to complete your payment expeditiously. Except for any financial information that you choose to provide while making payment for any Services on the Portal, Exchange22 does not collect any other Sensitive Personal Data in the course of providing the Services. Any Sensitive Personal Data collected by Exchange22 shall not be disclosed to any third party without your express consent, save as otherwise set out in this Privacy Policy or as provided in a separate written agreement between Exchange22 and you or as required by the applicable law. It is clarified that this condition shall not apply to publicly available information, including Sensitive Personal Data, in relation to you on the Portal.
+\n\n
+In the course of providing the Services, Users may invite other existing Users or other users hereinafter referred to as "
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView30"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView30"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="@+id/textView59"
+                app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView30"
+                app:layout_constraintTop_toBottomOf="@+id/view17"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="All the user information collected and stored by Exchange22 is the one which the user voluntarily submits. In addition, information submitted by the user is safely and securely stored within the Exchange22 database. The databases used by Exchange22 for storing the user information are protected by a firewall. The access to such servers is strictly limited and is password-protected in order to ensure a safe and secure storage of the user’s personal information. However, Exchange22 does not guarantee the security of the databases due to the fact that despite adopting various effective security measures, no security system is impenetrable or inaccessible. In addition to this, the user information can be obstructed amid the transfer of the information over the internet. Further, any sort of user information shared by the user amid the time of discussion over the site is public and can be easily accessed by anyone with Internet access.
+\n\n
+Exchange22 comprises of third-party advertisers that provide ads to the users at the time of their visit to Exchange22. These third-party advertisers might use the user information (excluding personal details like name, address, phone number etc.) for analysing and tracking the user visits to this and other websites, in order to understand the behavioural patterns or user interests, and then provide goods, services and other advertisements on the basis of user interests. Exchange22 shall not reveal, share or disclose the personal information or the identity of the user collected at the time of registration with these third-party advertisers. Several fraudulent emails, websites, blogs etc. often including the photos, logos, links, content or any other information associated with Exchange22, may, or are circulating on the Internet and claim to be from or associated with Exchange22. Such fraudulent emails, websites, blogs etc. might often ask the users to share their personal details including (but not limited to) like login name, password etc. In addition, these fraudulent websites, emails, blogs etc. might even demand the credit or debit card details of the user by convincing the users that they have won a prize or bonus amounts. Such emails, blogs, websites etc. are not associated with Exchange22 in any manner, and Exchange22 shall not be held responsible in an event any of the users reply to such emails or blogs or shares any information with them. Exchange22 strongly recommends the users not to trust, and respond to such mails, blogs, websites etc. and also not to share any credit /debit card details with them.
+\n\n
+Exchange22 may use your name, photo, Login ID and the state from where you are participating when announcing the results of any contests run on the Portal. Such contests are further governed by terms and conditions which shall be available on the Portals as and when such a contest is run on any Website. Exchange conducts periodic analysis and survey of the traffic to Exchange22.com for market research and advertising purposes. Exchange22 reserves the right to share your registration information with Exchange22 appointed market research and advertising companies or firms from time to time for the said purposes.
+\n\n
+Exchange22 also believes that the internet is an ever-evolving medium. We may periodically review from time to time and change our privacy policy to incorporate such future changes as may be considered appropriate, without any notice to you. Our use of any information we gather will always be consistent with the policy under which the information was collected, regardless of what the new policy may be. Any changes to our privacy policy will be posted on this page, so you are always aware of what information we collect, how we use it, how we store it and under what circumstances we disclose it.
+\n\n
+
+"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31"
+                app:layout_constraintStart_toStartOf="@+id/textView60"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31"
+                app:layout_constraintTop_toBottomOf="@+id/view16"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Exchange22 shall retain the information provided by the users for such period of time as is required to fulfil the purposes for which such information is collected, as outlined in this Privacy Policy, subject to such longer time periods of retention as explicitly consented by the user or may be required under any applicable laws. We shall also undertake periodic review of Personal Information in order to determine whether it is necessary to retain the same."
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView32"
+                app:layout_constraintStart_toStartOf="@+id/textView61"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView32"
+                app:layout_constraintStart_toStartOf="@+id/textView61"
+                app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView32"
+                app:layout_constraintTop_toBottomOf="@+id/view18"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Exchange22 may share any Sensitive Personal Data and Other Personal Information without obtaining user consent, if sharing of such information is necessary:
+\n\n\t\t
+to comply with legal processes or governmental request;\n\t\t
+to enforce the Terms and Conditions and this Privacy \n\t\t Policy;\n\t\t
+for prevention of fraud;\n\t\t
+for issues involving information security;\n\t\t
+to protect your rights, rights of Exchange22 and rights of \n\t\t the general public; and\n\t\t
+for such reasonable purposes (as may be prescribed by \n\t\t regulations governing the data protection framework in \n\t\t India)."
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintStart_toStartOf="@+id/textView62"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintStart_toStartOf="@+id/textView62"
+                app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintTop_toBottomOf="@+id/view19"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Exchange22 confirms that this Privacy Policy is only a description of its operation regarding user information. This Policy is not intended to and does not create any legal rights in your favour or in the favour of any other person. Exchange22 reserves the right to change this Policy at any time without giving you prior notice. The liability of Exchange22 shall be limited to removal of Sensitive Personal Data from the system of the Portal and removal of personally identifiable elements of the Other Personal Information. Notwithstanding anything to the contrary contained in this Policy and elsewhere, the aggregate liability of Exchange22 for all claims for damages pursuant to provisions of services on the Portal, including claims in respect to the violation of this Policy, shall be limited to the aggregate maximum amount of liability as provided in the Terms and Conditions."
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView34"
+                app:layout_constraintStart_toStartOf="@+id/textView63"
+                app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+
+            <View
+                android:id="@+id/view20"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView34"
+                app:layout_constraintStart_toStartOf="@+id/textView63"
+                app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView34"
+                app:layout_constraintTop_toBottomOf="@+id/view20"
+                app:srcCompat="@drawable/ic_bottom_top_foreground" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Any questions or clarifications with respect to this Policy or any complaints, comments, concerns or feedback can be sent to Exchange22 at contact@exchange22.com."
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView35"
+                app:layout_constraintStart_toStartOf="@+id/textView64"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageView35"
+                app:layout_constraintStart_toStartOf="@+id/textView64"
+                app:layout_constraintTop_toBottomOf="@+id/textView75" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

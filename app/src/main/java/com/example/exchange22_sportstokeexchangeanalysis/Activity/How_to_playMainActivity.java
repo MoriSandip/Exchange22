@@ -1,6 +1,7 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Activity;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -16,8 +17,12 @@ public class How_to_playMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_to_main);
 
+
         getSupportActionBar().setTitle("How to play");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // adding icon in the ActionBar
+
+/**/
 
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {

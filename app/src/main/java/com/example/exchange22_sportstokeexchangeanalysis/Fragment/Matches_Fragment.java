@@ -1,9 +1,15 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Fragment;
 
+import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,25 +17,37 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.exchange22_sportstokeexchangeanalysis.APIService.API_Service;
-import com.example.exchange22_sportstokeexchangeanalysis.Activity.LegalityActivity;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Codebeautify;
+import com.example.exchange22_sportstokeexchangeanalysis.Adapter.Matches_Adapter;
+import com.example.exchange22_sportstokeexchangeanalysis.MainActivity;
+import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.RetrofitInstance;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+
+import static android.graphics.Color.*;
 
 
 public class Matches_Fragment extends Fragment {
     API_Service myService;
+    RecyclerView recyclerView;
+    Matches_Adapter adapter;
+    Thread thread;
+    public  List<Demo> versionList = new ArrayList<>();
 
     public Matches_Fragment() {
     }
@@ -46,101 +64,79 @@ public class Matches_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
          myService= RetrofitInstance.getInstance().create(API_Service.class);
+
+
+        View view =inflater.inflate(R.layout.fragment_matches_, container, false);
+        recyclerView = view.findViewById(R.id.recyclerView);
+        Log.d("myTag", "onCreateView: ");
         getCourse();
-        return inflater.inflate(R.layout.fragment_matches_, container, false);
+
+      /*  recyclerView = view.findViewById(R.id.recyclerView);
+        adapter = new Matches_Adapter(MainActivity.versionList);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(adapter);
+
+*/
+        return  view;
     }
-
-
     private void getCourse() {
         final Gson gson = new Gson();
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         Request request = new Request.Builder()
-                .url("https://livescore6.p.rapidapi.com/matches/v2/list-by-date?Category=cricket&Date=20210722")
+                .url("https://livescore6.p.rapidapi.com/matches/v2/list-by-date?Category=cricket&Date=20210729")
                 .method("GET", null)
                 .addHeader("x-rapidapi-key", "37caee5f8fmshfb50e7c7cd6cfb1p1ab879jsnec872fe982c0")
                 .addHeader("x-rapidapi-host", "livescore6.p.rapidapi.com")
                 .build();
-        // Response response = client.newCall(request).execute();
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-
+                Toast.makeText(getContext(), "fsiled to load", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
+
                 if (response.isSuccessful()){
+
                     if (response.body()!=null){
 
-                   // Codebeautify user = gson.fromJson(response.body().charStream(), Codebeautify.class);
+                        try {
+                            JSONObject jsonObject= new JSONObject(response.body().string());
+                            Log.d("myTag", "onResponse123rty5ty5t: "+jsonObject);
+
+                            Type type = new TypeToken<List<Demo>>() {}.getType();
+
+                            versionList = gson.fromJson(jsonObject.getJSONArray("Stages").toString(), type);
+
+                            adapter = new Matches_Adapter(versionList);
+                            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                            recyclerView.setAdapter(adapter);
 
 
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
 
                     }
+                }else {
+                    getActivity().runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(getContext(), "\"failed to load", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
 
-                Log.d("myTag", "onResponse: "+response.body());
+
             }
         });
 
 
-        /* Call<Codebeautify> call=myService.getCourse1();
-    call.enqueue(new Callback<Codebeautify>() {
-        @Override
-        public void onResponse(Call<Codebeautify> call, Response<Codebeautify> response) {
-        if (response.isSuccessful()){
-            if (response.body()!=null){
-                Codebeautify codebeautify=response.body();
-                Log.d("myTag", "INNN: "+codebeautify.toString());
-
-            }
-        }
-            Log.d("myTag", "out: "+response.body());
-            Toast.makeText(getContext(), "yesss", Toast.LENGTH_SHORT).show();
-        }
-
-        @Override
-        public void onFailure(Call<Codebeautify> call, Throwable t) {
-            Toast.makeText(getContext(), "nooo", Toast.LENGTH_SHORT).show();
-
-        }
-    });*/
-       /* Log.d("myTag", "onResponse: ");
-        // on below line we are creating a retrofit
-        // builder and passing our base url
-
-        // below line is to create an instance for our retrofit api class.
-        API_Service retrofitAPI = retrofit.create(API_Service.class);
-        Call<Codebeautify> call = retrofitAPI.getCourse1();
-        call.enqueue(new Callback<Codebeautify>() {
-            @Override
-            public void onResponse(Call<Codebeautify> call, Response<Codebeautify> response) {
-                if (response.isSuccessful()) {
-
-                    Codebeautify modal = response.body();
-                    Log.d("myTag", "onResponse: ");
-                    Log.d("myTag", "onResponse: "+modal.toString());
-                    Toast.makeText(getContext(), "had fdf ", Toast.LENGTH_SHORT).show();
-
-                  *//*  courseNameTV.setText(modal.getCourseName());
-
-                    courseTracksTV.setText(modal.getCourseTracks());
-                    courseBatchTV.setText(modal.getCourseMode());
-                    // we are using picasso to load the image from url.
-                    Picasso.get().load(modal.getCourseimg()).into(courseIV);*//*
-                }
-            }
-
-
-
-            @Override
-            public void onFailure(Call<Codebeautify> call, Throwable t) {
-                Log.d("myTag", "onResponse: ");
-                // displaying an error message in toast
-                Toast.makeText(getContext(), " af adf had fdf ", Toast.LENGTH_SHORT).show();
-              //  Toast.makeText(MainActivity.this, "Fail to get the data..", Toast.LENGTH_SHORT).show();
-            }
-        });*/
     }
+
+
+
 }

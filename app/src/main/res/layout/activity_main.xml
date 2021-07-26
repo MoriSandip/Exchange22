@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".MainActivity">
 
 
@@ -18,6 +19,10 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
+        android:background="@color/black"
+        app:tabSelectedTextColor="@color/yello_statusbar"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/yello_statusbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,9 +57,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/download_apple">
+                android:background="@drawable/apl">
 
-                <ImageView
+             <!--   <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="42dp"
                     android:layout_height="42dp"
@@ -63,7 +68,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                    app:srcCompat="@drawable/apl" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -89,7 +94,7 @@
                     android:text="Apple"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                     app:layout_constraintEnd_toEndOf="@+id/textView6"
-                    app:layout_constraintStart_toStartOf="@+id/textView6" />
+                    app:layout_constraintStart_toStartOf="@+id/textView6" />-->
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -102,8 +107,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
+            android:fontFamily="@font/font"
+            android:gravity="center"
             android:text="India’s First Sports \nStock Exchange"
-            android:textColor="@color/black"
+            android:textColor="@color/new_background_green"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +121,8 @@
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:layout_marginTop="2dp"
             android:text="Join Exchange22 and Experience the Thrill  "
             app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -149,7 +158,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                    app:srcCompat="@drawable/androidicon" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -178,6 +187,28 @@
                     app:layout_constraintStart_toStartOf="@+id/textView4" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView37"
+            app:srcCompat="@drawable/tone" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:srcCompat="@drawable/tone" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
