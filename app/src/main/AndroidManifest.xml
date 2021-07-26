@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exchange22sportStokeExchangeAnalysis"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.WebActivity"></activity>
+        <activity android:name=".Activity.TeamProvid"></activity>
+        <activity android:name=".Activity.WebActivity" />
         <activity
             android:name=".Activity.Privacy_policy_Activity"
             android:screenOrientation="portrait" />
@@ -24,7 +25,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.How_to_playMainActivity"
             android:screenOrientation="portrait" />

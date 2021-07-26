@@ -52,7 +52,7 @@ public class BlankFragment extends Fragment {
        View view =inflater.inflate(R.layout.fragment_blank, container, false);
         myService= RetrofitInstance.getInstance().create(API_Service.class);
         recyclerView = view.findViewById(R.id.recyclerView);
-        final Gson gson = new Gson();
+  /*      final Gson gson = new Gson();
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         Request request = new Request.Builder()
@@ -99,7 +99,7 @@ public class BlankFragment extends Fragment {
 
             }
         });
-       return view;
+      */ return view;
     }
 
     @Override

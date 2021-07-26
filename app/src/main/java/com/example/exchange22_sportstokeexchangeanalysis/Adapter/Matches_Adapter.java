@@ -14,22 +14,27 @@ import com.example.exchange22_sportstokeexchangeanalysis.Events;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.EVV;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Event;
+import com.example.exchange22_sportstokeexchangeanalysis.Model.Match;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.T1;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.T2;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.TeamOne;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.MatchSampleLayoutBinding;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import static android.media.CamcorderProfile.get;
 
 public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHolder> {
-    List<Demo> codebeautifyArrayList;
+    List<Match> codebeautifyArrayList;
 
 
-    public Matches_Adapter(List<Demo> codebeautifyArrayList) {
+    public Matches_Adapter(List<Match> codebeautifyArrayList) {
         this.codebeautifyArrayList = codebeautifyArrayList;
 
     }
@@ -43,12 +48,21 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
     @Override
     public void onBindViewHolder(  Matches_Adapter.ViewHolder holder, int position) {
 
+        holder.binding.textView67.setText(codebeautifyArrayList.get(position).getTeam1());
+        holder.binding.textView68.setText(codebeautifyArrayList.get(position).getTeam2());
+
+
+        holder.binding.textView69.setText(codebeautifyArrayList.get(position).getTeam1());
+
+/*
 
  //  holder.binding.textView68.setText(codebeautifyArrayList.get(position).getCcd());
    holder.binding.textView66.setText(codebeautifyArrayList.get(position).getSnm());
 
-  /* T1 eev=codebeautifyArrayList.get(position).events.get(position).t1.get(position);
-        String name = eev.getNm();*/
+  */
+/* T1 eev=codebeautifyArrayList.get(position).events.get(position).t1.get(position);
+        String name = eev.getNm();*//*
+
 
    try {
        T1 eev=codebeautifyArrayList.get(position).events.get(0).t1.get(0);
@@ -78,6 +92,7 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
 
    holder.binding.textView69.setText(codebeautifyArrayList.get(position).getCsnm());
       //  holder.binding.textView66.setText(codebeautifyArrayList.get(1).getCcd());
+*/
 
     }
 
@@ -87,7 +102,7 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         return codebeautifyArrayList.size();
     }
 
-    public void setList(List<Demo> versionList) {
+    public void setList(List<Match> versionList) {
         codebeautifyArrayList= versionList;
         notifyDataSetChanged();
     }

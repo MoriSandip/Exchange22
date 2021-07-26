@@ -20,6 +20,7 @@ import com.example.exchange22_sportstokeexchangeanalysis.APIService.API_Service;
 import com.example.exchange22_sportstokeexchangeanalysis.Adapter.Matches_Adapter;
 import com.example.exchange22_sportstokeexchangeanalysis.MainActivity;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
+import com.example.exchange22_sportstokeexchangeanalysis.Model.Match;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.RetrofitInstance;
 import com.google.gson.Gson;
@@ -30,8 +31,12 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -47,7 +52,7 @@ public class Matches_Fragment extends Fragment {
     RecyclerView recyclerView;
     Matches_Adapter adapter;
     Thread thread;
-    public  List<Demo> versionList = new ArrayList<>();
+    public  List<Match> versionList = new ArrayList<>();
 
     public Matches_Fragment() {
     }
@@ -81,13 +86,21 @@ public class Matches_Fragment extends Fragment {
     }
     private void getCourse() {
         final Gson gson = new Gson();
-        OkHttpClient client = new OkHttpClient().newBuilder()
+        /*OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         Request request = new Request.Builder()
                 .url("https://livescore6.p.rapidapi.com/matches/v2/list-by-date?Category=cricket&Date=20210729")
                 .method("GET", null)
                 .addHeader("x-rapidapi-key", "37caee5f8fmshfb50e7c7cd6cfb1p1ab879jsnec872fe982c0")
                 .addHeader("x-rapidapi-host", "livescore6.p.rapidapi.com")
+                .build();*/
+
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        Request request = new Request.Builder()
+                .url("https://www.cricapi.com/api/matches")
+                .method("GET", null)
+                .addHeader("apikey", "fVBqVF8QNKNhDVsuSaIl61Pngmo1")
                 .build();
         client.newCall(request).enqueue(new Callback() {
             @Override
@@ -102,17 +115,27 @@ public class Matches_Fragment extends Fragment {
 
                     if (response.body()!=null){
 
+
                         try {
                             JSONObject jsonObject= new JSONObject(response.body().string());
-                            Log.d("myTag", "onResponse123rty5ty5t: "+jsonObject);
 
-                            Type type = new TypeToken<List<Demo>>() {}.getType();
+                            Type type = new TypeToken<List<Match>>() {}.getType();
 
-                            versionList = gson.fromJson(jsonObject.getJSONArray("Stages").toString(), type);
+                            versionList = gson.fromJson(jsonObject.getJSONArray("matches").toString(), type);
+                            getActivity().runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
 
-                            adapter = new Matches_Adapter(versionList);
-                            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-                            recyclerView.setAdapter(adapter);
+
+
+
+                                    adapter = new Matches_Adapter(versionList);
+                                    recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                                    recyclerView.setAdapter(adapter);
+                                }
+                            });
+
+
 
 
 
@@ -120,7 +143,6 @@ public class Matches_Fragment extends Fragment {
                             e.printStackTrace();
 
                         }
-
                     }
                 }else {
                     getActivity().runOnUiThread(new Runnable() {
