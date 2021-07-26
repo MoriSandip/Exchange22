@@ -57,6 +57,7 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         String dateInString = codebeautifyArrayList.get(position).getDate().toString();
 
         holder.binding.textView69.setText(dateInString);
+        //holder.binding.textView66.setText("toss winner team : ");
 
 
 

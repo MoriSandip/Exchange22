@@ -61,6 +61,54 @@ ActivityWithdrawTermsBinding binding;
                 }
             }
         });
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if ( textView1.getVisibility() == View.VISIBLE) {
+
+
+                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
+
+                    textView1.setVisibility(View.GONE);
+                    img2.setImageResource(R.drawable.ic_bottom_top_foreground);
+
+                } else {
+
+                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
+
+                    textView1.setVisibility(View.VISIBLE);
+
+                    img2.setImageResource(R.drawable.ic_bottom_foreground);
+
+
+                }
+            }
+        });
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if ( textView2.getVisibility() == View.VISIBLE) {
+
+
+                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
+
+                    textView2.setVisibility(View.GONE);
+                    img3.setImageResource(R.drawable.ic_bottom_top_foreground);
+
+                } else {
+
+                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
+
+                    textView2.setVisibility(View.VISIBLE);
+
+                    img3.setImageResource(R.drawable.ic_bottom_foreground);
+
+
+                }
+            }
+        });
+
+
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
