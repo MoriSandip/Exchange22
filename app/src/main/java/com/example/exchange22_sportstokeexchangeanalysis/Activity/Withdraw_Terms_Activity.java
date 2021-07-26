@@ -2,10 +2,6 @@ package com.example.exchange22_sportstokeexchangeanalysis.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.transition.AutoTransition;
-import androidx.transition.TransitionManager;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
-import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityWithdrawTermsBinding;
 
 public class Withdraw_Terms_Activity extends AppCompatActivity {
@@ -42,21 +37,13 @@ ActivityWithdrawTermsBinding binding;
             @Override
             public void onClick(View v) {
                 if ( textView.getVisibility() == View.VISIBLE) {
-
-
-                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
-
                     textView.setVisibility(View.GONE);
                     img1.setImageResource(R.drawable.ic_bottom_top_foreground);
 
                 } else {
 
-                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
-
                     textView.setVisibility(View.VISIBLE);
-
                     img1.setImageResource(R.drawable.ic_bottom_foreground);
-
 
                 }
             }
@@ -66,15 +53,10 @@ ActivityWithdrawTermsBinding binding;
             public void onClick(View v) {
                 if ( textView1.getVisibility() == View.VISIBLE) {
 
-
-                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
-
                     textView1.setVisibility(View.GONE);
                     img2.setImageResource(R.drawable.ic_bottom_top_foreground);
 
                 } else {
-
-                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
 
                     textView1.setVisibility(View.VISIBLE);
 
@@ -89,15 +71,10 @@ ActivityWithdrawTermsBinding binding;
             public void onClick(View v) {
                 if ( textView2.getVisibility() == View.VISIBLE) {
 
-
-                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
-
                     textView2.setVisibility(View.GONE);
                     img3.setImageResource(R.drawable.ic_bottom_top_foreground);
 
                 } else {
-
-                    //TransitionManager.beginDelayedTransition(textView, new AutoTransition());
 
                     textView2.setVisibility(View.VISIBLE);
 
@@ -122,26 +99,4 @@ ActivityWithdrawTermsBinding binding;
         }
         return super.onOptionsItemSelected(item);
     }
-}/*  imageView14.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if ( cardView.getVisibility() == View.VISIBLE) {
-
-
-                    TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-
-                    cardView.setVisibility(View.GONE);
-                    imageView14.setImageResource(R.drawable.ic_bottom_top_foreground);
-
-                } else {
-
-                    TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-
-                    cardView.setVisibility(View.VISIBLE);
-
-                    imageView14.setImageResource(R.drawable.ic_bottom_foreground);
-
-
-                }
-            }
-        });*/
+}

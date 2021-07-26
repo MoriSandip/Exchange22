@@ -5,33 +5,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.exchange22_sportstokeexchangeanalysis.Events;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.EVV;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Event;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Match;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.T1;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.T2;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.TeamOne;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.MatchSampleLayoutBinding;
-
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
 
-import static android.media.CamcorderProfile.get;
+
 
 public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHolder> {
     List<Match> codebeautifyArrayList;
@@ -41,7 +21,6 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         this.codebeautifyArrayList = codebeautifyArrayList;
 
     }
-
     @Override
     public ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
 
@@ -57,15 +36,6 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         String dateInString = codebeautifyArrayList.get(position).getDate().toString();
 
         holder.binding.textView69.setText(dateInString);
-        //holder.binding.textView66.setText("toss winner team : ");
-
-
-
-
-        // create output formatters (set timezone to UTC)
-
-
-
 
 
     }

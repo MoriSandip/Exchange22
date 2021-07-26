@@ -1,15 +1,10 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.example.exchange22_sportstokeexchangeanalysis.R;
-import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityHowToMainBinding;
 
 public class How_to_playMainActivity extends AppCompatActivity {
@@ -23,11 +18,8 @@ ActivityHowToMainBinding binding;
 
         getSupportActionBar().setTitle("How to play");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        // adding icon in the ActionBar
-
-/**/
-
-    }  @Override
+    }
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
     }

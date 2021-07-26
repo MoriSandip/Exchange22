@@ -6,9 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.example.exchange22_sportstokeexchangeanalysis.R;
-import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityFeaturesBinding;
 
 public class FeaturesActivity extends AppCompatActivity {
