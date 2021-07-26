@@ -200,21 +200,21 @@ public class Term_and_condition_Activity extends AppCompatActivity {
 
             }
         });
-      /*  binding.imageView36intro.setOnClickListener(new View.OnClickListener() {
+        binding.imageView36.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if ( binding.textView77intro1.getVisibility() == View.VISIBLE) {
-                    binding.textView77intro1.setVisibility(View.GONE);
-                    binding.imageView36intro1.setImageResource(R.drawable.ic_bottom_top_foreground);
+                if ( binding.textView77.getVisibility() == View.VISIBLE) {
+                    binding.textView77.setVisibility(View.GONE);
+                    binding.imageView36.setImageResource(R.drawable.ic_bottom_top_foreground);
 
                 } else {
 
 
 
-                    binding.textView77intro1.setVisibility(View.VISIBLE);
+                    binding.textView77.setVisibility(View.VISIBLE);
 
-                    binding.imageView36intro1.setImageResource(R.drawable.ic_bottom_foreground);
+                    binding.imageView36.setImageResource(R.drawable.ic_bottom_foreground);
 
 
                 }
@@ -222,21 +222,21 @@ public class Term_and_condition_Activity extends AppCompatActivity {
 
             }
         });
-        binding.imageView36intro1.setOnClickListener(new View.OnClickListener() {
+        binding.imageView36intro10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if ( binding.textView77intro1.getVisibility() == View.VISIBLE) {
-                    binding.textView77intro1.setVisibility(View.GONE);
-                    binding.imageView36intro1.setImageResource(R.drawable.ic_bottom_top_foreground);
+                if ( binding.textView77intro10.getVisibility() == View.VISIBLE) {
+                    binding.textView77intro10.setVisibility(View.GONE);
+                    binding.imageView36intro10.setImageResource(R.drawable.ic_bottom_top_foreground);
 
                 } else {
 
 
 
-                    binding.textView77intro1.setVisibility(View.VISIBLE);
+                    binding.textView77intro10.setVisibility(View.VISIBLE);
 
-                    binding.imageView36intro1.setImageResource(R.drawable.ic_bottom_foreground);
+                    binding.imageView36intro10.setImageResource(R.drawable.ic_bottom_foreground);
 
 
                 }
@@ -244,21 +244,21 @@ public class Term_and_condition_Activity extends AppCompatActivity {
 
             }
         });
-        binding.imageView36intro1.setOnClickListener(new View.OnClickListener() {
+        binding.imageView36intro11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if ( binding.textView77intro1.getVisibility() == View.VISIBLE) {
-                    binding.textView77intro1.setVisibility(View.GONE);
-                    binding.imageView36intro1.setImageResource(R.drawable.ic_bottom_top_foreground);
+                if ( binding.textView77intro11.getVisibility() == View.VISIBLE) {
+                    binding.textView77intro11.setVisibility(View.GONE);
+                    binding.imageView36intro11.setImageResource(R.drawable.ic_bottom_top_foreground);
 
                 } else {
 
 
 
-                    binding.textView77intro1.setVisibility(View.VISIBLE);
+                    binding.textView77intro11.setVisibility(View.VISIBLE);
 
-                    binding.imageView36intro1.setImageResource(R.drawable.ic_bottom_foreground);
+                    binding.imageView36intro11.setImageResource(R.drawable.ic_bottom_foreground);
 
 
                 }
@@ -266,7 +266,51 @@ public class Term_and_condition_Activity extends AppCompatActivity {
 
             }
         });
-*/
+        binding.imageView36intro12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if ( binding.textView77intro12.getVisibility() == View.VISIBLE) {
+                    binding.textView77intro12.setVisibility(View.GONE);
+                    binding.imageView36intro12.setImageResource(R.drawable.ic_bottom_top_foreground);
+
+                } else {
+
+
+
+                    binding.textView77intro12.setVisibility(View.VISIBLE);
+
+                    binding.imageView36intro12.setImageResource(R.drawable.ic_bottom_foreground);
+
+
+                }
+
+
+            }
+        });
+        binding.imageView36intro13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if ( binding.textView77intro13.getVisibility() == View.VISIBLE) {
+                    binding.textView77intro13.setVisibility(View.GONE);
+                    binding.imageView36intro13.setImageResource(R.drawable.ic_bottom_top_foreground);
+
+                } else {
+
+
+
+                    binding.textView77intro13.setVisibility(View.VISIBLE);
+
+                    binding.imageView36intro13.setImageResource(R.drawable.ic_bottom_foreground);
+
+
+                }
+
+
+            }
+        });
+
 
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {

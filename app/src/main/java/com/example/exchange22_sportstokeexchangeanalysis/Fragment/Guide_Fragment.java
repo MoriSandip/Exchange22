@@ -59,7 +59,6 @@ public class Guide_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                startActivity(new Intent(getContext(), How_to_playMainActivity.class));
-                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -67,7 +66,7 @@ public class Guide_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), About_Activity.class));
-                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
+
 
             }
         });
@@ -75,7 +74,6 @@ public class Guide_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), Withdraw_Terms_Activity.class));
-                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -84,7 +82,7 @@ public class Guide_Fragment extends Fragment {
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), FeaturesActivity.class));
 
-                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
+
 
             }
         });
@@ -92,7 +90,7 @@ public class Guide_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), LegalityActivity.class));
-                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
+
 
             }
         });
@@ -100,7 +98,7 @@ public class Guide_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), Contact_us_Activity.class));
-                Toast.makeText(getContext(), "adgdfg", Toast.LENGTH_SHORT).show();
+
 
             }
         });
