@@ -23,7 +23,7 @@
                 android:id="@+id/textView42"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Can I use someone else's bank account to withdraw money?"
+                android:text="@string/withdraw_two_title"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="How do I withdraw cash?"
+                android:text="@string/withdraw_one_title"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -53,21 +53,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text="\nYou can Withdraw Cash at any time by following the below mentioned steps:
-\n\nStep 1: Login to your Exchange22 account on the App.\n\nStep 2: Visit the ‘My Balance’ page and click on ‘Cash Withdraw’ option under the winnings section.
-\n\nStep 3: Enter an amount you would like to withdraw. However, you can only withdraw an amount less than or equal to your Balance that can be withdrawn. This will be shown to you on the Withdraw Cash page.
-\n\nFor making a withdrawal, your account has to be ID verified. Your PAN Card and Bank Ac-count details (Your Name, Name of the Bank, Account Number, IFS Code and Branch Name) has to be verified before placing a withdrawal request. In case you have not verified your account, you shall be prompted to upload your PAN Card details and Bank Account details following which our customer service executives will review and verify your uploaded document. You can also get yourself ID verified by uploading ID proof document from the ‘Verify Account’ section in the App.
-
-\n\n
-\t\tWhat is the minimum amount that can be withdrawn?   \n\nA minimum amount of ₹200 can be withdrawn once per 24 hours.\n\n
-\t\tWhat is the maximum amount that can be withdrawn?\n\n
-\t\tA maximum amount of ₹50,000 can be withdrawn once per 24 hours.If you wish to withdraw more than ₹50,000 once per 24 hours, please get in touch with our support team on Facebook Messenger or write to us at contact@exchange22.com.\n\n
-\t\tIs there any charge on withdrawal of amount?
-\n\nNo, we do not charge any amount on withdrawal.
-\n\n
-However, in normal buy/sell trade, we charge 6% per trade initiated by you. Also, for with-drawal on multi-bagger trades, we charge 20% of the pooled money as portal charges and distribute the remaining 80% amongst the winner(s).
-\n\n
-The charges help us improve and provide you with better interface so that you can enjoy and experience the thrill better."
+                android:lineSpacingExtra="8sp"
+                android:text="@string/withdraw_one_Description"
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
@@ -76,10 +63,10 @@ The charges help us improve and provide you with better interface so that you ca
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:lineSpacingExtra="8sp"
-                android:text="Unfortunately, you can withdraw money from your Exchange22 account balance ONLY to your own bank account. If you do not have a bank account, your winnings will keep getting accumulated in your Exchange22 account balance. Once you get a bank account in your name, you can use the same to get your Exchange22 account verified and place your with-drawal requests."
+                android:text="@string/withdraw_two_description"
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
@@ -90,7 +77,7 @@ The charges help us improve and provide you with better interface so that you ca
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="When will my withdrawal be processed?"
+                android:text="@string/withdraw_three_title"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -103,40 +90,10 @@ The charges help us improve and provide you with better interface so that you ca
             <TextView
                 android:id="@+id/textView45"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:lineSpacingExtra="8sp"
-                android:text="In cases of Instant Withdrawal Process (via IMPS) method of transfer the withdrawal might take 2-3 hours for the amount to reflect in your bank account. In case of delay on the part of the Bank to credit the funds to your account, it may take up to 3 working days.
-\n\n
-Normally, withdrawals are processed on the next working day of submitting a withdrawal request and are transferred to your verified bank account within 5 working days. Remember, your Exchange22 account must be completely verified before you place a withdrawal re-quest.
-\n\n
-We process Online Transfers on all days except Sunday and Bank Holidays.
-\n\n
-\t\tWhen can my withdrawal be cancelled?
-\n\n
-Your withdrawal may have been cancelled in the system due to one of the below reasons:
-\n\n
-\t\t
-Incorrect IFS code verified on the account
-\n\n\t\t
-Name on the bank does not match with the name verified on Exchange22 account
-\n\n\t\t
-Incorrect account number verified on the account
-\n\n
-In case your withdrawal has been cancelled due to the above reason, be rest assured that your amount will be credited back to your Exchange22 account and you will be asked to verify the correct bank details to place another withdrawal request. You can go ahead and complete your verification again and withdraw the winnings to the correct bank account.
-\n\n
-Further, If you've verified a bank account that belongs to Telangana, Assam or Odisha , Nagaland and Andhra Pradesh, Sikkim and Tamil Nadu, your withdrawal will be rejected. If you are based outside the states mentioned above, kindly place a verification request of a bank account that isn't located in any of them.
-\n\n
-Also, Exchange22 shall not be liable for any loss of any amount due to an incorrect but valid account number verified on the portal.
-\n\n
-
-In case of violation of the ‘Fair Play Terms’ of Exchange22, the withdrawal request will be put on hold until resolution.
-\n\n
-Disclaimers
-\n\n\t\t
-Exchange22, may, at its sole and absolute discretion, can hold or deactivate the Instant Withdrawal service anytime without any prior information to the user.\n\n
-\t\t
-In case of a dispute, disagreement or concern between Exchange22 and its payment partner, Exchange22 holds all the right to put the withdrawal requests and amounts on hold till such dispute is resolved."
+                android:text="@string/withdraw_three_description"
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="@+id/imageView19"
                 app:layout_constraintStart_toStartOf="@+id/textView40"

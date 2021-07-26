@@ -110,11 +110,12 @@
             android:layout_marginRight="16dp"
             android:fontFamily="@font/font"
             android:gravity="center"
-            android:text="India’s First Sports \nStock Exchange"
+            android:text="@string/slogn"
             android:textColor="@color/new_background_green"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,7 +126,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginTop="2dp"
-            android:text="Join Exchange22 and Experience the Thrill  "
+            android:text="@string/heading_line"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
