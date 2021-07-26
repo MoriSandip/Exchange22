@@ -16,7 +16,6 @@ import com.example.exchange22_sportstokeexchangeanalysis.Adapter.FragmentAdapter
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.BlankFragment;
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Guide_Fragment;
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Matches_Fragment;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Team;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.TeamOne;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityMainBinding;

@@ -38,13 +38,13 @@
 
                     <ImageView
                         android:id="@+id/contactimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ll"
+                        android:src="@drawable/contact"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -86,18 +86,18 @@
 
                     <ImageView
                         android:id="@+id/aboutimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ll"
-                        android:tint="@color/black"
+                        android:src="@drawable/about"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintVertical_bias="0.0"
+                        app:tint="@color/black" />
 
                     <TextView
                         android:id="@+id/abouttextView8"
@@ -135,13 +135,13 @@
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ll"
+                        android:src="@drawable/privacy"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -183,13 +183,13 @@
 
                     <ImageView
                         android:id="@+id/trmconditionimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ll"
+                        android:src="@drawable/terms"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -231,13 +231,13 @@
 
                     <ImageView
                         android:id="@+id/withdarw_termimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_wallet_foreground"
+                        android:src="@drawable/withdrow"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -279,13 +279,13 @@
 
                     <ImageView
                         android:id="@+id/legalityimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_wallet_foreground"
+                        android:src="@drawable/legality"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -331,13 +331,13 @@
 
                     <ImageView
                         android:id="@+id/how_to_playimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_wallet_foreground"
+                        android:src="@drawable/play"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -379,13 +379,13 @@
 
                     <ImageView
                         android:id="@+id/featureimageView3"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="64dp"
                         android:layout_marginLeft="64dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/ic_wallet_foreground"
+                        android:src="@drawable/features"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
