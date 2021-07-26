@@ -54,9 +54,40 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         holder.binding.textView67.setText(codebeautifyArrayList.get(position).getTeam1());
         holder.binding.textView68.setText(codebeautifyArrayList.get(position).getTeam2());
 
-        String dateInString = codebeautifyArrayList.get(position).getDate().toString();
+        String dateInString = codebeautifyArrayList.get(position).getDateTimeGMT().toString();
+       /* Date date=null;
 
-        holder.binding.textView69.setText(dateInString);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String temp = codebeautifyArrayList.get(position).getDateTimeGMT().toString();
+        try {
+            date = formatter.parse(temp);
+            Log.e("formated date ", date + "");
+
+            Date date1 = Calendar.getInstance().getTime();
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+            String strDate = dateFormat.format(date1);
+
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }*/
+
+        Date date=null;
+        SimpleDateFormat formatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzzz yyyy");
+        String temp = codebeautifyArrayList.get(position).getDateTimeGMT().toString();
+        try {
+            date = formatter.parse(temp);
+            Log.e("formated date ", date + "");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        String formateDate = new SimpleDateFormat("MM-dd-yyyy -- HH:mm:ss").format(date);
+        Log.v("output date ",formateDate);
+        holder.binding.textView69.setText(formateDate);
+
+      //  holder.binding.textView69.setText(codebeautifyArrayList.get(position).getDateTimeGMT().toString());
+
         //holder.binding.textView66.setText("toss winner team : ");
 
 
