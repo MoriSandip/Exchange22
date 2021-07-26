@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.net.Uri;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -39,7 +40,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
-    public static int position = -1;
+
     ActivityMainBinding binding;
 
 
@@ -73,19 +74,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        int[] imageResId = {
+                R.drawable.ic_baseline_guide,
+                R.drawable.ic_profile,
+        };
       /*  binding.tablayout.addTab(binding.tablayout.newTab().setText("Guide"));
         binding.tablayout.addTab(binding.tablayout.newTab().setText("Matches"));
 
         binding.tablayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
+<<<<<<< HEAD
         loadFragment();*/
 
       //  getCourse();
     }
 
     private void gotoWeb() {
-
         Intent intent = new Intent(MainActivity.this, WebActivity.class);
         startActivity(intent);
     }

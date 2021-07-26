@@ -22,11 +22,10 @@
         android:background="@color/black"
         app:tabSelectedTextColor="@color/yello_statusbar"
         app:tabTextColor="@color/white"
-        app:tabIndicatorColor="@color/yello_statusbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabIconTint="@color/black"
-        app:tabIndicatorColor="@color/black"
+        app:tabIndicatorColor="@color/yello_statusbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view">
