@@ -21,18 +21,21 @@ import com.example.exchange22_sportstokeexchangeanalysis.Model.TeamOne;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.MatchSampleLayoutBinding;
 
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
 
 import static android.media.CamcorderProfile.get;
 
 public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHolder> {
     List<Match> codebeautifyArrayList;
-
+    String newDateString;
 
     public Matches_Adapter(List<Match> codebeautifyArrayList) {
         this.codebeautifyArrayList = codebeautifyArrayList;
@@ -51,48 +54,18 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         holder.binding.textView67.setText(codebeautifyArrayList.get(position).getTeam1());
         holder.binding.textView68.setText(codebeautifyArrayList.get(position).getTeam2());
 
+        String dateInString = codebeautifyArrayList.get(position).getDate().toString();
 
-        holder.binding.textView69.setText(codebeautifyArrayList.get(position).getTeam1());
-
-/*
-
- //  holder.binding.textView68.setText(codebeautifyArrayList.get(position).getCcd());
-   holder.binding.textView66.setText(codebeautifyArrayList.get(position).getSnm());
-
-  */
-/* T1 eev=codebeautifyArrayList.get(position).events.get(position).t1.get(position);
-        String name = eev.getNm();*//*
-
-
-   try {
-       T1 eev=codebeautifyArrayList.get(position).events.get(0).t1.get(0);
-       T2 eev2=codebeautifyArrayList.get(position).events.get(0).t2.get(0);
-
-
-       String name= eev.getNm();
-       String name2 = eev2.getNm();
-    //  String name =  codebeautifyArrayList.get(position).events.get(position).t1.get(position).getNm();
-       holder.binding.textView67.setText(name);
-       holder.binding.textView68.setText(name2);
-
-       Log.d("myTag", "onBindViewHolder: "+name);
-   }
-   catch (Exception e){
-       Log.d("myTag", "onBindViewHolder: "+e.getLocalizedMessage());
-
-       e.printStackTrace();
-   }
+        holder.binding.textView69.setText(dateInString);
 
 
 
-       // holder.binding.textView67.setText(nnnnamwe);
-     //   holder.binding.textView67.setText("vishal"+nnnnamwe+"vishal");
-      //  Log.d("myTag", "onBindViewHolder: "+nnnnamwe);
+
+        // create output formatters (set timezone to UTC)
 
 
-   holder.binding.textView69.setText(codebeautifyArrayList.get(position).getCsnm());
-      //  holder.binding.textView66.setText(codebeautifyArrayList.get(1).getCcd());
-*/
+
+
 
     }
 

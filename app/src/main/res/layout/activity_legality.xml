@@ -78,7 +78,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/new_background_green2">
 
                     <TextView
                         android:id="@+id/textView30"
@@ -134,7 +135,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/new_background_green2">
 
                     <TextView
                         android:id="@+id/textView32"
@@ -193,7 +195,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/new_background_green2">
 
                     <TextView
                         android:id="@+id/textView34"
@@ -239,7 +242,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/new_background_green2">
 
                     <TextView
                         android:id="@+id/textView36"
@@ -287,7 +291,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/new_background_green2">
 
                     <TextView
                         android:id="@+id/textView38"
