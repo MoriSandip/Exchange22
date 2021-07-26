@@ -8,13 +8,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityContactUsBinding;
 
 public class Contact_us_Activity extends AppCompatActivity {
-
+ActivityContactUsBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact_us);
+        binding = ActivityContactUsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Contact information");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
