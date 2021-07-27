@@ -1,17 +1,12 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Fragment;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.About_Activity;
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.Contact_us_Activity;
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.FeaturesActivity;

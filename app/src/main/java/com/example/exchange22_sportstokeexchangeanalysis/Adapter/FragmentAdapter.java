@@ -3,13 +3,7 @@ package com.example.exchange22_sportstokeexchangeanalysis.Adapter;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-
-import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Guide_Fragment;
-import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Matches_Fragment;
-
 import java.util.ArrayList;
-
 public  class FragmentAdapter extends FragmentPagerAdapter {
 
     private ArrayList<Fragment> fragments;

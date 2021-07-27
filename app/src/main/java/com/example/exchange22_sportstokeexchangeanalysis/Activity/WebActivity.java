@@ -2,13 +2,11 @@ package com.example.exchange22_sportstokeexchangeanalysis.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 
