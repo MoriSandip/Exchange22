@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.exchange22_sportstokeexchangeanalysis">
+    package="com.dev.exch22">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,31 +13,31 @@
         android:theme="@style/Theme.Exchange22sportStokeExchangeAnalysis"
         android:hardwareAccelerated="true"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.TeamProvid"></activity>
-        <activity android:name=".Activity.WebActivity" />
+        <activity android:name="com.dev.exch22.Activity.TeamProvid"></activity>
+        <activity android:name="com.dev.exch22.Activity.WebActivity" />
         <activity
-            android:name=".Activity.Privacy_policy_Activity"
+            android:name="com.dev.exch22.Activity.Privacy_policy_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.Term_and_condition_Activity"
+            android:name="com.dev.exch22.Activity.Term_and_condition_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.Contact_us_Activity"
+            android:name="com.dev.exch22.Activity.Contact_us_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.dev.exch22.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.How_to_playMainActivity"
+            android:name="com.dev.exch22.Activity.How_to_playMainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.About_Activity"
+            android:name="com.dev.exch22.Activity.About_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.FeaturesActivity"
+            android:name="com.dev.exch22.Activity.FeaturesActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.Splash_Activity"
+            android:name="com.dev.exch22.Activity.Splash_Activity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,10 +46,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.LegalityActivity"
+            android:name="com.dev.exch22.Activity.LegalityActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.Withdraw_Terms_Activity"
+            android:name="com.dev.exch22.Activity.Withdraw_Terms_Activity"
             android:screenOrientation="portrait" />
         <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:hardwareAccelerated="true"/>
     </application>
