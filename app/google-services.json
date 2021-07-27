@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "825627225785",
+    "project_id": "exchange22-guide",
+    "storage_bucket": "exchange22-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825627225785:android:1497039347e2a32ff97568",
+        "android_client_info": {
+          "package_name": "com.example.exchange22_sportstokeexchangeanalysis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825627225785-6bo89vkf1e0gj0hhco0o7t8npjrg1smu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDanOW6wcX-YeGsFRQ15tgIYaWIfehp79w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825627225785-6bo89vkf1e0gj0hhco0o7t8npjrg1smu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

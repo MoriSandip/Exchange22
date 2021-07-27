@@ -127,7 +127,6 @@ public class Matches_Fragment extends Fragment {
                     });
                 }
 
-
             }
         });
 
