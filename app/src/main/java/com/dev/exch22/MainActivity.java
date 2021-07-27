@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     private InterstitialAd interstitialAd;
+    InterstitialAdListener interstitialAdListener;
 
 
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 gotoWeb();
             }
         });
+
 
         FragmentAdapter viewPagerAdapter=new FragmentAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragments(new Guide_Fragment(),"Guide");

@@ -1,5 +1,8 @@
 package com.dev.exch22.Fragment;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -19,6 +22,7 @@ import com.dev.exch22.R;
 import com.dev.exch22.RetrofitInstance;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -52,6 +56,7 @@ public class Matches_Fragment extends Fragment {
     public List<Match> objectList = new ArrayList<>();
     DocumentReference documentReference;
     Gson gson;
+    boolean connected = false;
 
     public Matches_Fragment() {
     }
@@ -67,16 +72,31 @@ public class Matches_Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        myService = RetrofitInstance.getInstance().create(API_Service.class);
-        gson = new Gson();
-
         View view = inflater.inflate(R.layout.fragment_matches_, container, false);
         recyclerView = view.findViewById(R.id.recyclerView);
-        Log.d("myTag", "onCreateView: ");
-        getCourse();
-        firebaseFirestore = FirebaseFirestore.getInstance();
-        documentReference = firebaseFirestore.collection("matches_data")
-                .document("1");
+        ConnectivityManager connectivityManager = (ConnectivityManager)getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+        }
+        else{
+            Toast.makeText(getContext(), "Please turn on Internet", Toast.LENGTH_LONG).show();
+            connected = false;
+        }
+        if (connected){
+            myService = RetrofitInstance.getInstance().create(API_Service.class);
+            gson = new Gson();
+
+
+            Log.d("myTag", "onCreateView: ");
+            getCourse();
+            firebaseFirestore = FirebaseFirestore.getInstance();
+            documentReference = firebaseFirestore.collection("matches_data")
+                    .document("1");
+
+
+        }
 
 
 // Add a new document with a generated ID
