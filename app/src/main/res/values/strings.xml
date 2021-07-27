@@ -108,5 +108,6 @@
     <string name="about_app">About</string>
     <string name="contact_us">Contact us</string>
     <string name="fb_banner">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
-    <string name="fb_interstrial">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_native_banner">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_interstrial">987860201967043_987860448633685</string>
 </resources>
