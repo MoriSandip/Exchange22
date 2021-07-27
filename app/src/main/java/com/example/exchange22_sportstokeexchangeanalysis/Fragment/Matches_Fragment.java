@@ -1,15 +1,11 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Fragment;
 
-import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +14,6 @@ import android.widget.Toast;
 
 import com.example.exchange22_sportstokeexchangeanalysis.APIService.API_Service;
 import com.example.exchange22_sportstokeexchangeanalysis.Adapter.Matches_Adapter;
-import com.example.exchange22_sportstokeexchangeanalysis.MainActivity;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Match;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.RetrofitInstance;
@@ -31,21 +25,14 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import okhttp3.ResponseBody;
-
-import static android.graphics.Color.*;
 
 
 public class Matches_Fragment extends Fragment {
@@ -77,24 +64,10 @@ public class Matches_Fragment extends Fragment {
         Log.d("myTag", "onCreateView: ");
         getCourse();
 
-      /*  recyclerView = view.findViewById(R.id.recyclerView);
-        adapter = new Matches_Adapter(MainActivity.versionList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(adapter);
-
-*/
         return  view;
     }
     private void getCourse() {
         final Gson gson = new Gson();
-        /*OkHttpClient client = new OkHttpClient().newBuilder()
-                .build();
-        Request request = new Request.Builder()
-                .url("https://livescore6.p.rapidapi.com/matches/v2/list-by-date?Category=cricket&Date=20210729")
-                .method("GET", null)
-                .addHeader("x-rapidapi-key", "37caee5f8fmshfb50e7c7cd6cfb1p1ab879jsnec872fe982c0")
-                .addHeader("x-rapidapi-host", "livescore6.p.rapidapi.com")
-                .build();*/
 
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
@@ -115,7 +88,7 @@ public class Matches_Fragment extends Fragment {
                 if (response.isSuccessful()){
 
                     if (response.body()!=null){
-                      // ResponseBody matchArrayList=response.body();
+
 
 
                         try {

@@ -24,7 +24,7 @@ public class Splash_Activity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
-               // lottieAnimationView.loop(false);
+
                 lottieAnimationView.setVisibility(View.GONE);
                 finish();
             }

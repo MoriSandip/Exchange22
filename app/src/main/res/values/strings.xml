@@ -107,4 +107,6 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="about_app">About</string>
     <string name="contact_us">Contact us</string>
+    <string name="fb_banner">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_interstrial">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
 </resources>

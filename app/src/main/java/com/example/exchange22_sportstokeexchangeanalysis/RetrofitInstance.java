@@ -10,10 +10,9 @@ public class RetrofitInstance {
         if (retrofit==null){
              retrofit = new Retrofit.Builder()
                     .baseUrl("https://www.cricapi.com/api/")
-                    // on below line we are calling add Converter
-                    // factory as GSON converter factory.
+
                     .addConverterFactory(GsonConverterFactory.create())
-                    // at last we are building our retrofit builder.
+
                     .build();
         }
 

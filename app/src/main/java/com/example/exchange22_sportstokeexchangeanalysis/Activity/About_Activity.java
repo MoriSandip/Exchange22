@@ -6,12 +6,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 
+import com.example.exchange22_sportstokeexchangeanalysis.FacebookAds;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
+import com.facebook.ads.AdSize;
+import com.facebook.ads.AdView;
 
 public class About_Activity extends AppCompatActivity {
     ActivityAboutBinding binding;
+    private AdView adView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +25,7 @@ public class About_Activity extends AppCompatActivity {
         getSupportActionBar().setTitle("About Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        new FacebookAds().banner(getApplicationContext(),binding.adView);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,5 +39,11 @@ public class About_Activity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    } @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy();
+        }
+        super.onDestroy();
     }
 }

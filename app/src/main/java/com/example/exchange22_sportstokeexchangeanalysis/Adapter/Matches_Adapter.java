@@ -1,35 +1,20 @@
 package com.example.exchange22_sportstokeexchangeanalysis.Adapter;
 
-import android.app.usage.UsageEvents;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.exchange22_sportstokeexchangeanalysis.Events;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Demo;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.EVV;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Event;
 import com.example.exchange22_sportstokeexchangeanalysis.Model.Match;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.T1;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.T2;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.TeamOne;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.MatchSampleLayoutBinding;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
 
 import static android.media.CamcorderProfile.get;
 
@@ -55,22 +40,7 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         holder.binding.textView68.setText(codebeautifyArrayList.get(position).getTeam2());
 
         String dateInString = codebeautifyArrayList.get(position).getDateTimeGMT().toString();
-       /* Date date=null;
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        String temp = codebeautifyArrayList.get(position).getDateTimeGMT().toString();
-        try {
-            date = formatter.parse(temp);
-            Log.e("formated date ", date + "");
-
-            Date date1 = Calendar.getInstance().getTime();
-            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-            String strDate = dateFormat.format(date1);
-
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }*/
 
         Date date=null;
         SimpleDateFormat formatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzzz yyyy");
@@ -85,18 +55,6 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
         String formateDate = new SimpleDateFormat("MM-dd-yyyy -- HH:mm:ss").format(date);
         Log.v("output date ",formateDate);
         holder.binding.textView69.setText(formateDate);
-
-      //  holder.binding.textView69.setText(codebeautifyArrayList.get(position).getDateTimeGMT().toString());
-
-        //holder.binding.textView66.setText("toss winner team : ");
-
-
-
-
-        // create output formatters (set timezone to UTC)
-
-
-
 
 
     }

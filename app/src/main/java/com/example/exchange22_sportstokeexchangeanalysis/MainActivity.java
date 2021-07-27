@@ -1,46 +1,27 @@
 package com.example.exchange22_sportstokeexchangeanalysis;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
-import android.graphics.PorterDuff;
-import android.net.Uri;
-import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.example.exchange22_sportstokeexchangeanalysis.Activity.WebActivity;
 import com.example.exchange22_sportstokeexchangeanalysis.Adapter.FragmentAdapter;
-import com.example.exchange22_sportstokeexchangeanalysis.Fragment.BlankFragment;
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Guide_Fragment;
 import com.example.exchange22_sportstokeexchangeanalysis.Fragment.Matches_Fragment;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.Team;
-import com.example.exchange22_sportstokeexchangeanalysis.Model.TeamOne;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityMainBinding;
+import com.facebook.ads.Ad;
+import com.facebook.ads.AdError;
+import com.facebook.ads.AudienceNetworkAds;
+import com.facebook.ads.InterstitialAd;
+import com.facebook.ads.InterstitialAdListener;
 import com.google.android.material.tabs.TabLayout;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
+    private InterstitialAd interstitialAd;
 
 
 
@@ -51,12 +32,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         getSupportActionBar().hide();
-       // ViewPager viewPager=view.findViewById(R.id.viewPager);
+        AudienceNetworkAds.initialize(this);
+        // ViewPager viewPager=view.findViewById(R.id.viewPager);
        // TabLayout tabLayout=view.findViewById(R.id.tabLayout);
         binding.androidDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               gotoWeb();
+              // gotoWeb();
+               showad();
+                gotoWeb();
             }
         });
 
@@ -69,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         binding.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               // gotoWeb();
+                showad();
                 gotoWeb();
             }
         });
@@ -77,15 +63,52 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ic_baseline_guide,
                 R.drawable.ic_profile,
         };
-      /*  binding.tablayout.addTab(binding.tablayout.newTab().setText("Guide"));
-        binding.tablayout.addTab(binding.tablayout.newTab().setText("Matches"));
 
-        binding.tablayout.setTabGravity(TabLayout.GRAVITY_FILL);
+    }
 
-<<<<<<< HEAD
-        loadFragment();*/
+    private void showad() {
 
-      //  getCourse();
+        interstitialAd = new InterstitialAd(this, getString(R.string.fb_interstrial));
+
+        InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
+            @Override
+            public void onInterstitialDisplayed(Ad ad) {
+
+
+            }
+
+            @Override
+            public void onInterstitialDismissed(Ad ad) {
+
+            }
+
+            @Override
+            public void onError(Ad ad, AdError adError) {
+
+            }
+
+            @Override
+            public void onAdLoaded(Ad ad) {
+
+                interstitialAd.show();
+            }
+
+            @Override
+            public void onAdClicked(Ad ad) {
+
+            }
+
+            @Override
+            public void onLoggingImpression(Ad ad) {
+
+            }
+        };
+
+
+        interstitialAd.loadAd(
+                interstitialAd.buildLoadAdConfig()
+                        .withAdListener(interstitialAdListener)
+                        .build());
     }
 
     private void gotoWeb() {
@@ -101,8 +124,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 binding.viewpager.setCurrentItem(tab.getPosition());
-               /* loadFragment();*/
-              /*  binding.viewpager.setCurrentItem(tab.getPosition());*/
+
             }
 
             @Override
@@ -114,6 +136,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    protected void onDestroy() {
+        if (interstitialAd != null) {
+            interstitialAd.destroy();
+        }
+        super.onDestroy();
     }
 
 

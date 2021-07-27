@@ -11,14 +11,25 @@ import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.example.exchange22_sportstokeexchangeanalysis.FacebookAds;
 import com.example.exchange22_sportstokeexchangeanalysis.R;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityAboutBinding;
 import com.example.exchange22_sportstokeexchangeanalysis.databinding.ActivityLegalityBinding;
+import com.facebook.ads.Ad;
+import com.facebook.ads.AdError;
+import com.facebook.ads.AdSize;
+import com.facebook.ads.AdView;
+import com.facebook.ads.AudienceNetworkAds;
+import com.facebook.ads.NativeAd;
+import com.facebook.ads.NativeAdListener;
+import com.facebook.ads.NativeBannerAd;
 
 public class LegalityActivity extends AppCompatActivity {
 ActivityLegalityBinding binding;
+    private AdView adView;
     ImageView imageView14,imageView15,imageView16,imageView17,imageView18;
     CardView cardView,cardView1,cardView2,cardView3,cardView4;
     @Override
@@ -29,6 +40,7 @@ ActivityLegalityBinding binding;
 
         getSupportActionBar().setTitle("Legality Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        new FacebookAds().banner(getApplicationContext(),binding.adView);
 
         imageView14 = findViewById(R.id.imageView14);
         imageView15 = findViewById(R.id.imageView15);
@@ -40,6 +52,9 @@ ActivityLegalityBinding binding;
         cardView2 = findViewById(R.id.cardView23);
         cardView3 = findViewById(R.id.cardView24);
         cardView4 = findViewById(R.id.cardView25);
+
+
+
 
         imageView14.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,6 +173,9 @@ ActivityLegalityBinding binding;
         });
 
 
+
+
+
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
@@ -171,6 +189,15 @@ ActivityLegalityBinding binding;
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy();
+        }
+        super.onDestroy();
+    }
+
 }
 
 /*
