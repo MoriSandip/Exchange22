@@ -12,13 +12,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.dev.exch22.FacebookAds;
+import com.dev.exch22.Exchange22_FacebookAds;
 import com.dev.exch22.R;
-import com.dev.exch22.databinding.ActivityAboutBinding;
 import com.dev.exch22.databinding.ActivityLegalityBinding;
 import com.facebook.ads.AdView;
 
-public class LegalityActivity extends AppCompatActivity {
+public class Exchange22_LegalityActivity extends AppCompatActivity {
 ActivityLegalityBinding binding;
     private AdView adView;
     ImageView imageView14,imageView15,imageView16,imageView17,imageView18;
@@ -31,7 +30,7 @@ ActivityLegalityBinding binding;
 
         getSupportActionBar().setTitle("Legality Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        new FacebookAds().banner(getApplicationContext(),binding.adView);
+        new Exchange22_FacebookAds().banner(getApplicationContext(),binding.adView);
 
         imageView14 = findViewById(R.id.imageView14);
         imageView15 = findViewById(R.id.imageView15);

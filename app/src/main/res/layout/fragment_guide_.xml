@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@color/new_background_green"
     android:layout_height="match_parent"
-    tools:context=".Fragment.Guide_Fragment">
+    tools:context=".Fragment.Exchange22_Guide_Fragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"

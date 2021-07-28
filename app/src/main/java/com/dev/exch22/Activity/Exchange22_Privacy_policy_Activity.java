@@ -8,13 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.dev.exch22.FacebookAds;
+import com.dev.exch22.Exchange22_FacebookAds;
 import com.dev.exch22.R;
-import com.dev.exch22.databinding.ActivityAboutBinding;
 import com.dev.exch22.databinding.ActivityPrivacyPolicyBinding;
 import com.facebook.ads.AdView;
 
-public class Privacy_policy_Activity extends AppCompatActivity {
+public class Exchange22_Privacy_policy_Activity extends AppCompatActivity {
 ActivityPrivacyPolicyBinding binding;
     private AdView adView;
     @Override
@@ -25,7 +24,7 @@ ActivityPrivacyPolicyBinding binding;
         getSupportActionBar().setTitle("Privacy policy");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        new FacebookAds().banner(getApplicationContext(),binding.adView);
+        new Exchange22_FacebookAds().banner(getApplicationContext(),binding.adView);
 
         binding.imageView26.setOnClickListener(new View.OnClickListener() {
             @Override

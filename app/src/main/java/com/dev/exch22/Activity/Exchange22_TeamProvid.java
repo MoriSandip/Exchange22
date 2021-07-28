@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.dev.exch22.R;
 
-public class TeamProvid extends AppCompatActivity {
+public class Exchange22_TeamProvid extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

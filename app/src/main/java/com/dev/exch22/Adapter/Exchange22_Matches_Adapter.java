@@ -4,12 +4,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.dev.exch22.Model.Match;
+import com.dev.exch22.Model.Exchange22_Match;
 import com.dev.exch22.R;
 import com.dev.exch22.databinding.MatchSampleLayoutBinding;
 
@@ -20,12 +19,12 @@ import java.util.List;
 
 import static android.media.CamcorderProfile.get;
 
-public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHolder> {
-    List<Match> codebeautifyArrayList;
+public class Exchange22_Matches_Adapter extends RecyclerView.Adapter<Exchange22_Matches_Adapter.ViewHolder> {
+    List<Exchange22_Match> codebeautifyArrayList;
     String newDateString;
     boolean isSize=false;
 
-    public Matches_Adapter(List<Match> codebeautifyArrayList) {
+    public Exchange22_Matches_Adapter(List<Exchange22_Match> codebeautifyArrayList) {
         this.codebeautifyArrayList = codebeautifyArrayList;
 
     }
@@ -37,7 +36,7 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(  Matches_Adapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(Exchange22_Matches_Adapter.ViewHolder holder, int position) {
         if (isSize){
             Toast.makeText(holder.itemView.getContext(), "Please Check your Internet", Toast.LENGTH_LONG).show();
         }else {
@@ -77,7 +76,7 @@ public class Matches_Adapter extends RecyclerView.Adapter<Matches_Adapter.ViewHo
 
     }
 
-    public void setList(List<Match> versionList) {
+    public void setList(List<Exchange22_Match> versionList) {
         codebeautifyArrayList= versionList;
         notifyDataSetChanged();
     }

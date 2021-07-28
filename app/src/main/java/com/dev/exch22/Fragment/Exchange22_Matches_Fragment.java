@@ -15,14 +15,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.dev.exch22.APIService.API_Service;
-import com.dev.exch22.Adapter.Matches_Adapter;
-import com.dev.exch22.Model.Match;
+import com.dev.exch22.APIService.Exchange22_API_Service;
+import com.dev.exch22.Adapter.Exchange22_Matches_Adapter;
+import com.dev.exch22.Model.Exchange22_Match;
 import com.dev.exch22.R;
-import com.dev.exch22.RetrofitInstance;
+import com.dev.exch22.Exchange22_RetrofitInstance;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -46,19 +45,19 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 
-public class Matches_Fragment extends Fragment {
-    API_Service myService;
+public class Exchange22_Matches_Fragment extends Fragment {
+    Exchange22_API_Service myService;
     RecyclerView recyclerView;
-    Matches_Adapter adapter;
+    Exchange22_Matches_Adapter adapter;
     Thread thread;
     FirebaseFirestore firebaseFirestore;
-    public List<Match> versionList = new ArrayList<>();
-    public List<Match> objectList = new ArrayList<>();
+    public List<Exchange22_Match> versionList = new ArrayList<>();
+    public List<Exchange22_Match> objectList = new ArrayList<>();
     DocumentReference documentReference;
     Gson gson;
     boolean connected = false;
 
-    public Matches_Fragment() {
+    public Exchange22_Matches_Fragment() {
     }
 
     @Override
@@ -85,7 +84,7 @@ public class Matches_Fragment extends Fragment {
             connected = false;
         }
         if (connected){
-            myService = RetrofitInstance.getInstance().create(API_Service.class);
+            myService = Exchange22_RetrofitInstance.getInstance().create(Exchange22_API_Service.class);
             gson = new Gson();
 
 
@@ -130,7 +129,7 @@ public class Matches_Fragment extends Fragment {
                         try {
                             JSONObject jsonObject = new JSONObject(response.body().string());
 
-                            Type type = new TypeToken<List<Match>>() {
+                            Type type = new TypeToken<List<Exchange22_Match>>() {
                             }.getType();
 
                             versionList = gson.fromJson(jsonObject.getJSONArray("matches").toString(), type);
@@ -143,7 +142,7 @@ public class Matches_Fragment extends Fragment {
                                 @Override
                                 public void run() {
 
-                                    adapter = new Matches_Adapter(versionList);
+                                    adapter = new Exchange22_Matches_Adapter(versionList);
                                     recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                                     recyclerView.setAdapter(adapter);
                                 }
@@ -181,10 +180,10 @@ public class Matches_Fragment extends Fragment {
 
                         try {
                             jsonObject = new JSONObject(stringobj);
-                            Type type = new TypeToken<List<Match>>() {
+                            Type type = new TypeToken<List<Exchange22_Match>>() {
                             }.getType();
                             objectList = gson.fromJson(jsonObject.getJSONArray("matches").toString(), type);
-                            adapter = new Matches_Adapter(objectList);
+                            adapter = new Exchange22_Matches_Adapter(objectList);
                             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                             recyclerView.setAdapter(adapter);
                         } catch (JSONException jsonException) {

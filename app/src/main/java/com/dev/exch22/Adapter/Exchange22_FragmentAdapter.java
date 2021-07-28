@@ -4,12 +4,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
-public  class FragmentAdapter extends FragmentPagerAdapter {
+public  class Exchange22_FragmentAdapter extends FragmentPagerAdapter {
 
     private ArrayList<Fragment> fragments;
     private ArrayList<String> titles;
 
-    public FragmentAdapter( FragmentManager fm) {
+    public Exchange22_FragmentAdapter(FragmentManager fm) {
         super(fm);
         this.fragments=new ArrayList<>();
         this.titles=new ArrayList<>();

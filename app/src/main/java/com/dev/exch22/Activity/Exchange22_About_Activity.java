@@ -2,28 +2,29 @@ package com.dev.exch22.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 
-import com.dev.exch22.R;
+import com.dev.exch22.Exchange22_FacebookAds;
+import com.dev.exch22.databinding.ActivityAboutBinding;
+import com.facebook.ads.AdView;
 
-public class WebActivity extends AppCompatActivity {
-WebView mWebView;
+public class Exchange22_About_Activity extends AppCompatActivity {
+    ActivityAboutBinding binding;
+    private AdView adView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web);
-
-        mWebView = (WebView) findViewById(R.id.webView);
+        binding = ActivityAboutBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("About Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        WebSettings webSettings = mWebView.getSettings();
-
-        mWebView.loadUrl("https://www.exchange22.com/index.html");
-    }@Override
+        new Exchange22_FacebookAds().banner(getApplicationContext(),binding.adView);
+    }
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
     }
@@ -35,5 +36,11 @@ WebView mWebView;
 
         }
         return super.onOptionsItemSelected(item);
+    } @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy();
+        }
+        super.onDestroy();
     }
 }

@@ -11,14 +11,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.dev.exch22.FacebookAds;
+import com.dev.exch22.Exchange22_FacebookAds;
 import com.dev.exch22.R;
-import com.dev.exch22.databinding.ActivityAboutBinding;
 import com.dev.exch22.databinding.ActivityWithdrawTermsBinding;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.NativeAd;
 
-public class Withdraw_Terms_Activity extends AppCompatActivity {
+public class Exchange22_Withdraw_Terms_Activity extends AppCompatActivity {
     ActivityWithdrawTermsBinding binding;
     ImageView img1,img2,img3;
     private ConstraintLayout adView;
@@ -39,7 +38,7 @@ public class Withdraw_Terms_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         AudienceNetworkAds.initialize(this);
-        new FacebookAds().nativead(getApplicationContext(),binding.adView,native_ad_media);
+        new Exchange22_FacebookAds().nativead(getApplicationContext(),binding.adView,native_ad_media);
 
 
 

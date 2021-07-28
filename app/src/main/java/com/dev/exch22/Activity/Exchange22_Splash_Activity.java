@@ -8,10 +8,10 @@ import android.os.Handler;
 import android.view.View;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.dev.exch22.MainActivity;
+import com.dev.exch22.Exchange22_MainActivity;
 import com.dev.exch22.R;
 
-public class Splash_Activity extends AppCompatActivity {
+public class Exchange22_Splash_Activity extends AppCompatActivity {
     LottieAnimationView lottieAnimationView;
 
     @Override
@@ -23,7 +23,7 @@ public class Splash_Activity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), Exchange22_MainActivity.class));
 
                 lottieAnimationView.setVisibility(View.GONE);
                 finish();

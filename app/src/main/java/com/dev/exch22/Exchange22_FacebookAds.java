@@ -14,7 +14,7 @@ import com.facebook.ads.NativeAdView;
 import com.facebook.ads.NativeBannerAd;
 import com.facebook.ads.NativeBannerAdView;
 
-public class FacebookAds {
+public class Exchange22_FacebookAds {
 
 
     public void banner(final Context context, final ViewGroup viewGroup) {

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.Date;
 import java.util.List;
 
-public class Match {public int unique_id;
+public class Exchange22_Match {public int unique_id;
     public Date date;
     public Date dateTimeGMT;
     @SerializedName("team-1")
@@ -121,17 +121,17 @@ public class Match {public int unique_id;
   }
 
   class Root{
-    public List<Match> matches;
+    public List<Exchange22_Match> matches;
     public String v;
     public int ttl;
     public Provider provider;
     public int creditsLeft;
 
-      public List<Match> getMatches() {
+      public List<Exchange22_Match> getMatches() {
           return matches;
       }
 
-      public void setMatches(List<Match> matches) {
+      public void setMatches(List<Exchange22_Match> matches) {
           this.matches = matches;
       }
 

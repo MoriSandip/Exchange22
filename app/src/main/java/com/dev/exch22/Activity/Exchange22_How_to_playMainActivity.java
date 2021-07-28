@@ -14,7 +14,7 @@ import com.dev.exch22.databinding.ActivityHowToMainBinding;
 import com.facebook.ads.AdSize;
 import com.facebook.ads.AdView;
 
-public class How_to_playMainActivity extends AppCompatActivity {
+public class Exchange22_How_to_playMainActivity extends AppCompatActivity {
 ActivityHowToMainBinding binding;
     private AdView adView;
     @Override

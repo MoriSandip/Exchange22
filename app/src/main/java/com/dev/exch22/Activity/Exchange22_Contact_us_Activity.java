@@ -6,33 +6,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
+import android.widget.ImageView;
 
+import com.dev.exch22.Exchange22_FacebookAds;
 import com.dev.exch22.R;
-import com.dev.exch22.databinding.ActivityAboutBinding;
-import com.dev.exch22.databinding.ActivityFeaturesBinding;
-import com.facebook.ads.AdSize;
+import com.dev.exch22.databinding.ActivityContactUsBinding;
 import com.facebook.ads.AdView;
+import com.facebook.ads.AudienceNetworkAds;
 
-public class FeaturesActivity extends AppCompatActivity {
-ActivityFeaturesBinding binding;
+public class Exchange22_Contact_us_Activity extends AppCompatActivity {
+ActivityContactUsBinding binding;
     private AdView adView;
+    ImageView native_ad_media;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityFeaturesBinding.inflate(getLayoutInflater());
+        binding = ActivityContactUsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().setTitle("Feature's Details");
+
+       // new FacebookAds().banner(getApplicationContext(),binding.adView);
+
+        native_ad_media=findViewById(R.id.native_ad_media);
+        AudienceNetworkAds.initialize(this);
+        new Exchange22_FacebookAds().nativead(getApplicationContext(),binding.adView,native_ad_media);
+
+        getSupportActionBar().setTitle("Contact information");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        adView = new AdView(this, getString(R.string.fb_banner), AdSize.BANNER_HEIGHT_50);
-
-        FrameLayout adContainer = (FrameLayout) findViewById(R.id.ad_view);
-
-        adContainer.addView(adView);
-
-        adView.loadAd();
-
-
 
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,8 +45,7 @@ ActivityFeaturesBinding binding;
 
         }
         return super.onOptionsItemSelected(item);
-    }
-    @Override
+    } @Override
     protected void onDestroy() {
         if (adView != null) {
             adView.destroy();

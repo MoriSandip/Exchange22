@@ -9,7 +9,7 @@ import android.view.View;
 import com.dev.exch22.R;
 import com.dev.exch22.databinding.ActivityTermAndConditionBinding;
 
-public class Term_and_condition_Activity extends AppCompatActivity {
+public class Exchange22_Term_and_condition_Activity extends AppCompatActivity {
 
     ActivityTermAndConditionBinding binding;
     @Override

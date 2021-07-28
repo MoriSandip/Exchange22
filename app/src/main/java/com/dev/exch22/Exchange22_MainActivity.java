@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.dev.exch22.Activity.WebActivity;
-import com.dev.exch22.Adapter.FragmentAdapter;
-import com.dev.exch22.Fragment.Guide_Fragment;
-import com.dev.exch22.Fragment.Matches_Fragment;
+import com.dev.exch22.Activity.Exchange22_WebActivity;
+import com.dev.exch22.Adapter.Exchange22_FragmentAdapter;
+import com.dev.exch22.Fragment.Exchange22_Guide_Fragment;
+import com.dev.exch22.Fragment.Exchange22_Matches_Fragment;
 import com.dev.exch22.databinding.ActivityMainBinding;
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
@@ -18,7 +18,7 @@ import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class Exchange22_MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     private InterstitialAd interstitialAd;
@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        FragmentAdapter viewPagerAdapter=new FragmentAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragments(new Guide_Fragment(),"Guide");
-        viewPagerAdapter.addFragments(new Matches_Fragment(),"Match");
+        Exchange22_FragmentAdapter viewPagerAdapter=new Exchange22_FragmentAdapter(getSupportFragmentManager());
+        viewPagerAdapter.addFragments(new Exchange22_Guide_Fragment(),"Guide");
+        viewPagerAdapter.addFragments(new Exchange22_Matches_Fragment(),"Match");
 
         binding.viewpager.setAdapter(viewPagerAdapter);
         binding.tablayout.setupWithViewPager( binding.viewpager);
@@ -114,12 +114,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void gotoWeb() {
-        Intent intent = new Intent(MainActivity.this, WebActivity.class);
+        Intent intent = new Intent(Exchange22_MainActivity.this, Exchange22_WebActivity.class);
         startActivity(intent);
     }
 
     public void loadFragment() {
-        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+        Exchange22_FragmentAdapter adapter = new Exchange22_FragmentAdapter(getSupportFragmentManager());
         binding.viewpager.setAdapter(adapter);
         binding.viewpager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(binding.tablayout));
         binding.tablayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

@@ -7,19 +7,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.dev.exch22.Activity.About_Activity;
-import com.dev.exch22.Activity.Contact_us_Activity;
-import com.dev.exch22.Activity.FeaturesActivity;
-import com.dev.exch22.Activity.How_to_playMainActivity;
-import com.dev.exch22.Activity.LegalityActivity;
-import com.dev.exch22.Activity.Privacy_policy_Activity;
-import com.dev.exch22.Activity.Term_and_condition_Activity;
-import com.dev.exch22.Activity.Withdraw_Terms_Activity;
+import com.dev.exch22.Activity.Exchange22_About_Activity;
+import com.dev.exch22.Activity.Exchange22_Contact_us_Activity;
+import com.dev.exch22.Activity.Exchange22_FeaturesActivity;
+import com.dev.exch22.Activity.Exchange22_How_to_playMainActivity;
+import com.dev.exch22.Activity.Exchange22_LegalityActivity;
+import com.dev.exch22.Activity.Exchange22_Privacy_policy_Activity;
+import com.dev.exch22.Activity.Exchange22_Term_and_condition_Activity;
+import com.dev.exch22.Activity.Exchange22_Withdraw_Terms_Activity;
 import com.dev.exch22.BuildConfig;
 import com.dev.exch22.R;
 
 
-public class Guide_Fragment extends Fragment {
+public class Exchange22_Guide_Fragment extends Fragment {
 
     CardView how_to_play,feature,cardView5,cardView10,cardView6,Contact,cardView8,cardView9,share;
     @Override
@@ -54,27 +54,27 @@ public class Guide_Fragment extends Fragment {
         cardView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), Term_and_condition_Activity.class));
+                startActivity(new Intent(getActivity(), Exchange22_Term_and_condition_Activity.class));
             }
         });
         cardView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), Privacy_policy_Activity.class));
+                startActivity(new Intent(getContext(), Exchange22_Privacy_policy_Activity.class));
             }
         });
 
         how_to_play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               startActivity(new Intent(getContext(), How_to_playMainActivity.class));
+               startActivity(new Intent(getContext(), Exchange22_How_to_playMainActivity.class));
 
             }
         });
         cardView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), About_Activity.class));
+                startActivity(new Intent(getContext(), Exchange22_About_Activity.class));
 
 
             }
@@ -82,14 +82,14 @@ public class Guide_Fragment extends Fragment {
         cardView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), Withdraw_Terms_Activity.class));
+                startActivity(new Intent(getContext(), Exchange22_Withdraw_Terms_Activity.class));
 
             }
         });
         feature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), FeaturesActivity.class));
+                startActivity(new Intent(getContext(), Exchange22_FeaturesActivity.class));
 
 
 
@@ -98,7 +98,7 @@ public class Guide_Fragment extends Fragment {
         cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), LegalityActivity.class));
+                startActivity(new Intent(getContext(), Exchange22_LegalityActivity.class));
 
 
             }
@@ -106,7 +106,7 @@ public class Guide_Fragment extends Fragment {
         Contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), Contact_us_Activity.class));
+                startActivity(new Intent(getContext(), Exchange22_Contact_us_Activity.class));
 
 
             }

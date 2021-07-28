@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/new_background_green2"
-    tools:context=".Activity.Privacy_policy_Activity">
+    tools:context=".Activity.Exchange22_Privacy_policy_Activity">
 
     <View
         android:id="@+id/view6"

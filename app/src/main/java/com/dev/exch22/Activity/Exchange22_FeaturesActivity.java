@@ -6,33 +6,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.widget.FrameLayout;
 
-import com.dev.exch22.FacebookAds;
 import com.dev.exch22.R;
 import com.dev.exch22.databinding.ActivityAboutBinding;
-import com.dev.exch22.databinding.ActivityContactUsBinding;
+import com.dev.exch22.databinding.ActivityFeaturesBinding;
+import com.facebook.ads.AdSize;
 import com.facebook.ads.AdView;
-import com.facebook.ads.AudienceNetworkAds;
 
-public class Contact_us_Activity extends AppCompatActivity {
-ActivityContactUsBinding binding;
+public class Exchange22_FeaturesActivity extends AppCompatActivity {
+ActivityFeaturesBinding binding;
     private AdView adView;
-    ImageView native_ad_media;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityContactUsBinding.inflate(getLayoutInflater());
+        binding = ActivityFeaturesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-       // new FacebookAds().banner(getApplicationContext(),binding.adView);
-
-        native_ad_media=findViewById(R.id.native_ad_media);
-        AudienceNetworkAds.initialize(this);
-        new FacebookAds().nativead(getApplicationContext(),binding.adView,native_ad_media);
-
-        getSupportActionBar().setTitle("Contact information");
+        getSupportActionBar().setTitle("Feature's Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        adView = new AdView(this, getString(R.string.fb_banner), AdSize.BANNER_HEIGHT_50);
+
+        FrameLayout adContainer = (FrameLayout) findViewById(R.id.ad_view);
+
+        adContainer.addView(adView);
+
+        adView.loadAd();
+
+
 
     }  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,7 +46,8 @@ ActivityContactUsBinding binding;
 
         }
         return super.onOptionsItemSelected(item);
-    } @Override
+    }
+    @Override
     protected void onDestroy() {
         if (adView != null) {
             adView.destroy();
